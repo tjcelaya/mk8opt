@@ -1,0 +1,133 @@
+#!/usr/bin/env ruby
+require 'csv'
+require 'pry'
+
+if ARGV.first == '-h'
+    puts %{ usage: ./mk8opt [s a w h t m]
+        s - Speed
+        a - Acceleration
+        w - Weight
+        h - Handling
+        t - Traction
+        m - Mini-Turbo
+    }
+    exit 0
+end
+
+class Hash
+    def +(otherHash)
+        unless self.keys.sort == otherHash.keys.sort
+            raise ArgumentError, "Keys must match" 
+        end
+        
+        result = {}
+        self.keys.each do |k|
+            if k == 'Name'
+                result[k] = self[k] + "," + otherHash[k]
+            else
+                result[k] = Float(self[k]) + Float(otherHash[k])
+            end
+        end
+        result
+    end
+
+    def score(*ks)
+        unless ks.sort.all? { |k| self.keys.member? k }
+            $stderr.puts(ks)
+
+            raise ArgumentError, "Missing key"
+        end
+
+        if ks.length == 1 then return self[ks[0]] end
+
+        #reduce (init, method_sym)
+        sum = self.values_at(*ks).reduce(0.0, :+)
+
+        avg =  sum / ks.length
+
+        #reduce (init) {|memo, val| block } 
+        standard_deviation = self.values_at(*ks).reduce(0.0) do |m, v|
+            m + (v - avg) * (v - avg)
+        end
+        (sum ** 2) / (1+standard_deviation ** 2)
+    end
+end
+
+chars = []
+vehicles = []
+wheels = []
+chars_vehicles_wheels = []
+
+menu = %{
+    Sortomatic!
+    ===========
+    x quits
+    otherwise enter the stats you want to optimize
+    eg. >Speed,Acceleration
+}
+
+COLUMN_WIDTH_FIRST = 40
+COLUMN_WIDTH_REST = 9
+FORMAT_STRING_LEFT = "%-#{COLUMN_WIDTH_FIRST}.#{COLUMN_WIDTH_FIRST}s#{" %-#{COLUMN_WIDTH_REST}.#{COLUMN_WIDTH_REST}s" * 7} |Score"
+# FORMAT_STRING_RIGHT = "%-#{COLUMN_WIDTH_FIRST}.#{COLUMN_WIDTH_FIRST}s#{" %#{COLUMN_WIDTH_REST}.#{COLUMN_WIDTH_REST}s" * 7} |%4.4s"
+FORMAT_STRING_RIGHT = "%-s\n#{' '*40}#{" %#{COLUMN_WIDTH_REST}.#{COLUMN_WIDTH_REST}s" * 7} |%4.4s"
+
+{'MK8C.csv' => chars,
+ 'MK8V.csv' => vehicles,
+ 'MK8W.csv' => wheels}.each_pair do |file,var| 
+    CSV.foreach(file, {:headers => true}) { |l| var << l.to_hash }
+end
+
+NAME_KEY = "Name"
+ACTUAL_STATS = chars.first.keys - [NAME_KEY]
+sort_key = ""
+
+chars.each do |c|
+    vehicles.each do |v|
+        wheels.each do |w|
+            # puts FORMAT_STRING_RIGHT % (c).values
+            # puts FORMAT_STRING_RIGHT % (v).values
+            # puts FORMAT_STRING_RIGHT % (w).values
+            # puts FORMAT_STRING_RIGHT % (c + v + w).values
+            chars_vehicles_wheels << c + v + w
+        end
+    end
+end
+
+# puts menu
+# print "\n>"
+# until (input = gets.strip) == 'x'
+
+    ARGV.map! do |arg|
+        case arg[0].downcase
+        when 's'
+            'Speed'
+        when 'a'
+            'Acceleration'
+        when 'w'
+            'Weight'
+        when 'h'
+            'Handling'
+        when 't'
+            'Traction'
+        when 'm'
+            'Mini-Turbo'
+        end
+    end
+
+    sort_key = ARGV
+
+# binding.pry
+    puts FORMAT_STRING_LEFT % ([NAME_KEY] + ACTUAL_STATS)
+    
+    reverse = sort_key.length == 1 ? 1 : -1
+# binding.pry
+    puts chars_vehicles_wheels
+        .sort   { |x,y| (x.score(*sort_key) <=> y.score(*sort_key))*1 }
+        .uniq   { |x| x.values_at(*ACTUAL_STATS).join ',' }
+        .map    { |l| "\n" + (FORMAT_STRING_RIGHT % (l.values << l.score(*sort_key))) }
+    
+    puts FORMAT_STRING_LEFT % ([NAME_KEY] + ACTUAL_STATS)
+    
+#     print "\n>"
+# end
