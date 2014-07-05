@@ -1,6 +1,5 @@
 #!/usr/bin/env ruby
 require 'csv'
-require 'pry'
 
 if ARGV.first == '-h'
     puts %{ usage: ./mk8opt [s a w h t m]
@@ -46,10 +45,11 @@ class Hash
         avg =  sum / ks.length
 
         #reduce (init) {|memo, val| block } 
-        standard_deviation = self.values_at(*ks).reduce(0.0) do |m, v|
+        squared_distances = self.values_at(*ks).reduce(0.0) do |m, v|
             m + (v - avg) * (v - avg)
         end
-        (sum ** 2) / (1+standard_deviation ** 2)
+        standard_deviation = Math.sqrt(squared_distances/Float(ks.length))
+        (sum ** 2) / (1 + standard_deviation ** 2)
     end
 end
 
