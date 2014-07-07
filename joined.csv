@@ -1,0 +1,344 @@
+Name,Speed,Acceleration,Weight,Handling,Traction,Mini-Turbo,Total
+"Baby Daisy,Biddybuggy,Roller",1.0,5.5,1.25,5.5,4.0,5.5,22.75
+"Baby Daisy,Biddybuggy,Sponge",1.25,4.75,1.5,5.0,4.75,4.75,22.0
+"Baby Daisy,Biddybuggy,Standard",1.5,4.5,1.75,5.25,4.25,4.0,21.25
+"Baby Daisy,Biddybuggy,Monster",1.5,4.0,2.25,4.5,5.0,4.0,21.25
+"Baby Daisy,Biddybuggy,Slim",1.75,4.25,1.75,5.5,3.75,4.25,21.25
+"Baby Daisy,Biddybuggy,Slick",2.0,4.25,2.0,5.25,3.25,4.25,21.0
+"Baby Daisy,Biddybuggy,Metal",1.75,4.0,2.25,5.25,3.75,4.0,21.0
+"Baby Daisy,Comet,Roller",1.75,5.0,1.5,5.75,3.0,5.0,22.0
+"Baby Daisy,Comet,Sponge",2.0,4.25,1.75,5.25,3.75,4.25,21.25
+"Baby Daisy,Comet,Standard",2.25,4.0,2.0,5.5,3.25,3.5,20.5
+"Baby Daisy,Comet,Monster",2.25,3.5,2.5,4.75,4.0,3.5,20.5
+"Baby Daisy,Comet,Slim",2.5,3.75,2.0,5.75,2.75,3.75,20.5
+"Baby Daisy,Comet,Slick",2.75,3.75,2.25,5.5,2.25,3.75,20.25
+"Baby Daisy,Comet,Metal",2.5,3.5,2.5,5.5,2.75,3.5,20.25
+"Baby Daisy,Pipe Frame,Roller",1.75,4.5,1.5,5.5,3.75,4.75,21.75
+"Baby Daisy,Pipe Frame,Sponge",2.0,3.75,1.75,5.0,4.5,4.0,21.0
+"Baby Daisy,Pipe Frame,Standard",2.25,3.5,2.0,5.25,4.0,3.25,20.25
+"Baby Daisy,Pipe Frame,Monster",2.25,3.0,2.5,4.5,4.75,3.25,20.25
+"Baby Daisy,Pipe Frame,Slim",2.5,3.25,2.0,5.5,3.5,3.5,20.25
+"Baby Daisy,Pipe Frame,Slick",2.75,3.25,2.25,5.25,3.0,3.5,20.0
+"Baby Daisy,Pipe Frame,Metal",2.5,3.0,2.5,5.25,3.5,3.25,20.0
+"Baby Daisy,Standard Kart,Roller",1.75,4.25,1.75,5.0,4.25,4.5,21.5
+"Baby Daisy,Standard Kart,Sponge",2.0,3.5,2.0,4.5,5.0,3.75,20.75
+"Baby Daisy,Standard Kart,Standard",2.25,3.25,2.25,4.75,4.5,3.0,20.0
+"Baby Daisy,Standard Kart,Monster",2.25,2.75,2.75,4.0,5.25,3.0,20.0
+"Baby Daisy,Standard Kart,Slim",2.5,3.0,2.25,5.0,4.0,3.25,20.0
+"Baby Daisy,Standard Kart,Slick",2.75,3.0,2.5,4.75,3.5,3.25,19.75
+"Baby Daisy,Standard Kart,Metal",2.5,2.75,2.75,4.75,4.0,3.0,19.75
+"Baby Daisy,Mach 8,Roller",2.25,4.0,2.0,5.0,3.75,4.0,21.0
+"Baby Daisy,Mach 8,Sponge",2.5,3.25,2.25,4.5,4.5,3.25,20.25
+"Baby Daisy,Mach 8,Standard",2.75,3.0,2.5,4.75,4.0,2.5,19.5
+"Baby Daisy,Mach 8,Monster",2.75,2.5,3.0,4.0,4.75,2.5,19.5
+"Baby Daisy,Mach 8,Slim",3.0,2.75,2.5,5.0,3.5,2.75,19.5
+"Baby Daisy,Mach 8,Slick",3.25,2.75,2.75,4.75,3.0,2.75,19.25
+"Baby Daisy,Mach 8,Metal",3.0,2.5,3.0,4.75,3.5,2.5,19.25
+"Baby Daisy,Steel Driver,Roller",1.75,3.75,2.25,4.5,4.75,3.75,20.75
+"Baby Daisy,Steel Driver,Sponge",2.0,3.0,2.5,4.0,5.5,3.0,20.0
+"Baby Daisy,Steel Driver,Standard",2.25,2.75,2.75,4.25,5.0,2.25,19.25
+"Baby Daisy,Steel Driver,Monster",2.25,2.25,3.25,3.5,5.75,2.25,19.25
+"Baby Daisy,Steel Driver,Slim",2.5,2.5,2.75,4.5,4.5,2.5,19.25
+"Baby Daisy,Steel Driver,Slick",2.75,2.5,3.0,4.25,4.0,2.5,19.0
+"Baby Daisy,Steel Driver,Metal",2.5,2.25,3.25,4.25,4.5,2.25,19.0
+"Baby Daisy,Circuit Special,Roller",2.25,4.0,2.0,5.0,3.25,4.0,20.5
+"Baby Daisy,Circuit Special,Sponge",2.5,3.25,2.25,4.5,4.0,3.25,19.75
+"Baby Daisy,Circuit Special,Standard",2.75,3.0,2.5,4.75,3.5,2.5,19.0
+"Baby Daisy,Circuit Special,Monster",2.75,2.5,3.0,4.0,4.25,2.5,19.0
+"Baby Daisy,Circuit Special,Slim",3.0,2.75,2.5,5.0,3.0,2.75,19.0
+"Baby Daisy,Circuit Special,Slick",3.25,2.75,2.75,4.75,2.5,2.75,18.75
+"Baby Daisy,Circuit Special,Metal",3.0,2.5,3.0,4.75,3.0,2.5,18.75
+"Koopa Troopa,Biddybuggy,Roller",1.5,5.25,1.75,5.0,3.75,5.25,22.5
+"Koopa Troopa,Biddybuggy,Sponge",1.75,4.5,2.0,4.5,4.5,4.5,21.75
+"Koopa Troopa,Biddybuggy,Standard",2.0,4.25,2.25,4.75,4.0,3.75,21.0
+"Koopa Troopa,Biddybuggy,Monster",2.0,3.75,2.75,4.0,4.75,3.75,21.0
+"Koopa Troopa,Biddybuggy,Slim",2.25,4.0,2.25,5.0,3.5,4.0,21.0
+"Koopa Troopa,Biddybuggy,Slick",2.5,4.0,2.5,4.75,3.0,4.0,20.75
+"Koopa Troopa,Biddybuggy,Metal",2.25,3.75,2.75,4.75,3.5,3.75,20.75
+"Koopa Troopa,Comet,Roller",2.25,4.75,2.0,5.25,2.75,4.75,21.75
+"Koopa Troopa,Comet,Sponge",2.5,4.0,2.25,4.75,3.5,4.0,21.0
+"Koopa Troopa,Comet,Standard",2.75,3.75,2.5,5.0,3.0,3.25,20.25
+"Koopa Troopa,Comet,Monster",2.75,3.25,3.0,4.25,3.75,3.25,20.25
+"Koopa Troopa,Comet,Slim",3.0,3.5,2.5,5.25,2.5,3.5,20.25
+"Koopa Troopa,Comet,Slick",3.25,3.5,2.75,5.0,2.0,3.5,20.0
+"Koopa Troopa,Comet,Metal",3.0,3.25,3.0,5.0,2.5,3.25,20.0
+"Koopa Troopa,Pipe Frame,Roller",2.25,4.25,2.0,5.0,3.5,4.5,21.5
+"Koopa Troopa,Pipe Frame,Sponge",2.5,3.5,2.25,4.5,4.25,3.75,20.75
+"Koopa Troopa,Pipe Frame,Standard",2.75,3.25,2.5,4.75,3.75,3.0,20.0
+"Koopa Troopa,Pipe Frame,Monster",2.75,2.75,3.0,4.0,4.5,3.0,20.0
+"Koopa Troopa,Pipe Frame,Slim",3.0,3.0,2.5,5.0,3.25,3.25,20.0
+"Koopa Troopa,Pipe Frame,Slick",3.25,3.0,2.75,4.75,2.75,3.25,19.75
+"Koopa Troopa,Pipe Frame,Metal",3.0,2.75,3.0,4.75,3.25,3.0,19.75
+"Koopa Troopa,Standard Kart,Roller",2.25,4.0,2.25,4.5,4.0,4.25,21.25
+"Koopa Troopa,Standard Kart,Sponge",2.5,3.25,2.5,4.0,4.75,3.5,20.5
+"Koopa Troopa,Standard Kart,Standard",2.75,3.0,2.75,4.25,4.25,2.75,19.75
+"Koopa Troopa,Standard Kart,Monster",2.75,2.5,3.25,3.5,5.0,2.75,19.75
+"Koopa Troopa,Standard Kart,Slim",3.0,2.75,2.75,4.5,3.75,3.0,19.75
+"Koopa Troopa,Standard Kart,Slick",3.25,2.75,3.0,4.25,3.25,3.0,19.5
+"Koopa Troopa,Standard Kart,Metal",3.0,2.5,3.25,4.25,3.75,2.75,19.5
+"Koopa Troopa,Mach 8,Roller",2.75,3.75,2.5,4.5,3.5,3.75,20.75
+"Koopa Troopa,Mach 8,Sponge",3.0,3.0,2.75,4.0,4.25,3.0,20.0
+"Koopa Troopa,Mach 8,Standard",3.25,2.75,3.0,4.25,3.75,2.25,19.25
+"Koopa Troopa,Mach 8,Monster",3.25,2.25,3.5,3.5,4.5,2.25,19.25
+"Koopa Troopa,Mach 8,Slim",3.5,2.5,3.0,4.5,3.25,2.5,19.25
+"Koopa Troopa,Mach 8,Slick",3.75,2.5,3.25,4.25,2.75,2.5,19.0
+"Koopa Troopa,Mach 8,Metal",3.5,2.25,3.5,4.25,3.25,2.25,19.0
+"Koopa Troopa,Steel Driver,Roller",2.25,3.5,2.75,4.0,4.5,3.5,20.5
+"Koopa Troopa,Steel Driver,Sponge",2.5,2.75,3.0,3.5,5.25,2.75,19.75
+"Koopa Troopa,Steel Driver,Standard",2.75,2.5,3.25,3.75,4.75,2.0,19.0
+"Koopa Troopa,Steel Driver,Monster",2.75,2.0,3.75,3.0,5.5,2.0,19.0
+"Koopa Troopa,Steel Driver,Slim",3.0,2.25,3.25,4.0,4.25,2.25,19.0
+"Koopa Troopa,Steel Driver,Slick",3.25,2.25,3.5,3.75,3.75,2.25,18.75
+"Koopa Troopa,Steel Driver,Metal",3.0,2.0,3.75,3.75,4.25,2.0,18.75
+"Koopa Troopa,Circuit Special,Roller",2.75,3.75,2.5,4.5,3.0,3.75,20.25
+"Koopa Troopa,Circuit Special,Sponge",3.0,3.0,2.75,4.0,3.75,3.0,19.5
+"Koopa Troopa,Circuit Special,Standard",3.25,2.75,3.0,4.25,3.25,2.25,18.75
+"Koopa Troopa,Circuit Special,Monster",3.25,2.25,3.5,3.5,4.0,2.25,18.75
+"Koopa Troopa,Circuit Special,Slim",3.5,2.5,3.0,4.5,2.75,2.5,18.75
+"Koopa Troopa,Circuit Special,Slick",3.75,2.5,3.25,4.25,2.25,2.5,18.5
+"Koopa Troopa,Circuit Special,Metal",3.5,2.25,3.5,4.25,2.75,2.25,18.5
+"Daisy,Biddybuggy,Roller",2.0,5.0,2.25,4.5,3.5,5.0,22.25
+"Daisy,Biddybuggy,Sponge",2.25,4.25,2.5,4.0,4.25,4.25,21.5
+"Daisy,Biddybuggy,Standard",2.5,4.0,2.75,4.25,3.75,3.5,20.75
+"Daisy,Biddybuggy,Monster",2.5,3.5,3.25,3.5,4.5,3.5,20.75
+"Daisy,Biddybuggy,Slim",2.75,3.75,2.75,4.5,3.25,3.75,20.75
+"Daisy,Biddybuggy,Slick",3.0,3.75,3.0,4.25,2.75,3.75,20.5
+"Daisy,Biddybuggy,Metal",2.75,3.5,3.25,4.25,3.25,3.5,20.5
+"Daisy,Comet,Roller",2.75,4.5,2.5,4.75,2.5,4.5,21.5
+"Daisy,Comet,Sponge",3.0,3.75,2.75,4.25,3.25,3.75,20.75
+"Daisy,Comet,Standard",3.25,3.5,3.0,4.5,2.75,3.0,20.0
+"Daisy,Comet,Monster",3.25,3.0,3.5,3.75,3.5,3.0,20.0
+"Daisy,Comet,Slim",3.5,3.25,3.0,4.75,2.25,3.25,20.0
+"Daisy,Comet,Slick",3.75,3.25,3.25,4.5,1.75,3.25,19.75
+"Daisy,Comet,Metal",3.5,3.0,3.5,4.5,2.25,3.0,19.75
+"Daisy,Pipe Frame,Roller",2.75,4.0,2.5,4.5,3.25,4.25,21.25
+"Daisy,Pipe Frame,Sponge",3.0,3.25,2.75,4.0,4.0,3.5,20.5
+"Daisy,Pipe Frame,Standard",3.25,3.0,3.0,4.25,3.5,2.75,19.75
+"Daisy,Pipe Frame,Monster",3.25,2.5,3.5,3.5,4.25,2.75,19.75
+"Daisy,Pipe Frame,Slim",3.5,2.75,3.0,4.5,3.0,3.0,19.75
+"Daisy,Pipe Frame,Slick",3.75,2.75,3.25,4.25,2.5,3.0,19.5
+"Daisy,Pipe Frame,Metal",3.5,2.5,3.5,4.25,3.0,2.75,19.5
+"Daisy,Standard Kart,Roller",2.75,3.75,2.75,4.0,3.75,4.0,21.0
+"Daisy,Standard Kart,Sponge",3.0,3.0,3.0,3.5,4.5,3.25,20.25
+"Daisy,Standard Kart,Standard",3.25,2.75,3.25,3.75,4.0,2.5,19.5
+"Daisy,Standard Kart,Monster",3.25,2.25,3.75,3.0,4.75,2.5,19.5
+"Daisy,Standard Kart,Slim",3.5,2.5,3.25,4.0,3.5,2.75,19.5
+"Daisy,Standard Kart,Slick",3.75,2.5,3.5,3.75,3.0,2.75,19.25
+"Daisy,Standard Kart,Metal",3.5,2.25,3.75,3.75,3.5,2.5,19.25
+"Daisy,Mach 8,Roller",3.25,3.5,3.0,4.0,3.25,3.5,20.5
+"Daisy,Mach 8,Sponge",3.5,2.75,3.25,3.5,4.0,2.75,19.75
+"Daisy,Mach 8,Standard",3.75,2.5,3.5,3.75,3.5,2.0,19.0
+"Daisy,Mach 8,Monster",3.75,2.0,4.0,3.0,4.25,2.0,19.0
+"Daisy,Mach 8,Slim",4.0,2.25,3.5,4.0,3.0,2.25,19.0
+"Daisy,Mach 8,Slick",4.25,2.25,3.75,3.75,2.5,2.25,18.75
+"Daisy,Mach 8,Metal",4.0,2.0,4.0,3.75,3.0,2.0,18.75
+"Daisy,Steel Driver,Roller",2.75,3.25,3.25,3.5,4.25,3.25,20.25
+"Daisy,Steel Driver,Sponge",3.0,2.5,3.5,3.0,5.0,2.5,19.5
+"Daisy,Steel Driver,Standard",3.25,2.25,3.75,3.25,4.5,1.75,18.75
+"Daisy,Steel Driver,Monster",3.25,1.75,4.25,2.5,5.25,1.75,18.75
+"Daisy,Steel Driver,Slim",3.5,2.0,3.75,3.5,4.0,2.0,18.75
+"Daisy,Steel Driver,Slick",3.75,2.0,4.0,3.25,3.5,2.0,18.5
+"Daisy,Steel Driver,Metal",3.5,1.75,4.25,3.25,4.0,1.75,18.5
+"Daisy,Circuit Special,Roller",3.25,3.5,3.0,4.0,2.75,3.5,20.0
+"Daisy,Circuit Special,Sponge",3.5,2.75,3.25,3.5,3.5,2.75,19.25
+"Daisy,Circuit Special,Standard",3.75,2.5,3.5,3.75,3.0,2.0,18.5
+"Daisy,Circuit Special,Monster",3.75,2.0,4.0,3.0,3.75,2.0,18.5
+"Daisy,Circuit Special,Slim",4.0,2.25,3.5,4.0,2.5,2.25,18.5
+"Daisy,Circuit Special,Slick",4.25,2.25,3.75,3.75,2.0,2.25,18.25
+"Daisy,Circuit Special,Metal",4.0,2.0,4.0,3.75,2.5,2.0,18.25
+"Iggy,Biddybuggy,Roller",2.5,4.75,2.75,4.0,3.25,4.75,22.0
+"Iggy,Biddybuggy,Sponge",2.75,4.0,3.0,3.5,4.0,4.0,21.25
+"Iggy,Biddybuggy,Standard",3.0,3.75,3.25,3.75,3.5,3.25,20.5
+"Iggy,Biddybuggy,Monster",3.0,3.25,3.75,3.0,4.25,3.25,20.5
+"Iggy,Biddybuggy,Slim",3.25,3.5,3.25,4.0,3.0,3.5,20.5
+"Iggy,Biddybuggy,Slick",3.5,3.5,3.5,3.75,2.5,3.5,20.25
+"Iggy,Biddybuggy,Metal",3.25,3.25,3.75,3.75,3.0,3.25,20.25
+"Iggy,Comet,Roller",3.25,4.25,3.0,4.25,2.25,4.25,21.25
+"Iggy,Comet,Sponge",3.5,3.5,3.25,3.75,3.0,3.5,20.5
+"Iggy,Comet,Standard",3.75,3.25,3.5,4.0,2.5,2.75,19.75
+"Iggy,Comet,Monster",3.75,2.75,4.0,3.25,3.25,2.75,19.75
+"Iggy,Comet,Slim",4.0,3.0,3.5,4.25,2.0,3.0,19.75
+"Iggy,Comet,Slick",4.25,3.0,3.75,4.0,1.5,3.0,19.5
+"Iggy,Comet,Metal",4.0,2.75,4.0,4.0,2.0,2.75,19.5
+"Iggy,Pipe Frame,Roller",3.25,3.75,3.0,4.0,3.0,4.0,21.0
+"Iggy,Pipe Frame,Sponge",3.5,3.0,3.25,3.5,3.75,3.25,20.25
+"Iggy,Pipe Frame,Standard",3.75,2.75,3.5,3.75,3.25,2.5,19.5
+"Iggy,Pipe Frame,Monster",3.75,2.25,4.0,3.0,4.0,2.5,19.5
+"Iggy,Pipe Frame,Slim",4.0,2.5,3.5,4.0,2.75,2.75,19.5
+"Iggy,Pipe Frame,Slick",4.25,2.5,3.75,3.75,2.25,2.75,19.25
+"Iggy,Pipe Frame,Metal",4.0,2.25,4.0,3.75,2.75,2.5,19.25
+"Iggy,Standard Kart,Roller",3.25,3.5,3.25,3.5,3.5,3.75,20.75
+"Iggy,Standard Kart,Sponge",3.5,2.75,3.5,3.0,4.25,3.0,20.0
+"Iggy,Standard Kart,Standard",3.75,2.5,3.75,3.25,3.75,2.25,19.25
+"Iggy,Standard Kart,Monster",3.75,2.0,4.25,2.5,4.5,2.25,19.25
+"Iggy,Standard Kart,Slim",4.0,2.25,3.75,3.5,3.25,2.5,19.25
+"Iggy,Standard Kart,Slick",4.25,2.25,4.0,3.25,2.75,2.5,19.0
+"Iggy,Standard Kart,Metal",4.0,2.0,4.25,3.25,3.25,2.25,19.0
+"Iggy,Mach 8,Roller",3.75,3.25,3.5,3.5,3.0,3.25,20.25
+"Iggy,Mach 8,Sponge",4.0,2.5,3.75,3.0,3.75,2.5,19.5
+"Iggy,Mach 8,Standard",4.25,2.25,4.0,3.25,3.25,1.75,18.75
+"Iggy,Mach 8,Monster",4.25,1.75,4.5,2.5,4.0,1.75,18.75
+"Iggy,Mach 8,Slim",4.5,2.0,4.0,3.5,2.75,2.0,18.75
+"Iggy,Mach 8,Slick",4.75,2.0,4.25,3.25,2.25,2.0,18.5
+"Iggy,Mach 8,Metal",4.5,1.75,4.5,3.25,2.75,1.75,18.5
+"Iggy,Steel Driver,Roller",3.25,3.0,3.75,3.0,4.0,3.0,20.0
+"Iggy,Steel Driver,Sponge",3.5,2.25,4.0,2.5,4.75,2.25,19.25
+"Iggy,Steel Driver,Standard",3.75,2.0,4.25,2.75,4.25,1.5,18.5
+"Iggy,Steel Driver,Monster",3.75,1.5,4.75,2.0,5.0,1.5,18.5
+"Iggy,Steel Driver,Slim",4.0,1.75,4.25,3.0,3.75,1.75,18.5
+"Iggy,Steel Driver,Slick",4.25,1.75,4.5,2.75,3.25,1.75,18.25
+"Iggy,Steel Driver,Metal",4.0,1.5,4.75,2.75,3.75,1.5,18.25
+"Iggy,Circuit Special,Roller",3.75,3.25,3.5,3.5,2.5,3.25,19.75
+"Iggy,Circuit Special,Sponge",4.0,2.5,3.75,3.0,3.25,2.5,19.0
+"Iggy,Circuit Special,Standard",4.25,2.25,4.0,3.25,2.75,1.75,18.25
+"Iggy,Circuit Special,Monster",4.25,1.75,4.5,2.5,3.5,1.75,18.25
+"Iggy,Circuit Special,Slim",4.5,2.0,4.0,3.5,2.25,2.0,18.25
+"Iggy,Circuit Special,Slick",4.75,2.0,4.25,3.25,1.75,2.0,18.0
+"Iggy,Circuit Special,Metal",4.5,1.75,4.5,3.25,2.25,1.75,18.0
+"Donkey Kong,Biddybuggy,Roller",3.0,4.5,3.25,3.5,3.0,4.25,21.5
+"Donkey Kong,Biddybuggy,Sponge",3.25,3.75,3.5,3.0,3.75,3.5,20.75
+"Donkey Kong,Biddybuggy,Standard",3.5,3.5,3.75,3.25,3.25,2.75,20.0
+"Donkey Kong,Biddybuggy,Monster",3.5,3.0,4.25,2.5,4.0,2.75,20.0
+"Donkey Kong,Biddybuggy,Slim",3.75,3.25,3.75,3.5,2.75,3.0,20.0
+"Donkey Kong,Biddybuggy,Slick",4.0,3.25,4.0,3.25,2.25,3.0,19.75
+"Donkey Kong,Biddybuggy,Metal",3.75,3.0,4.25,3.25,2.75,2.75,19.75
+"Donkey Kong,Comet,Roller",3.75,4.0,3.5,3.75,2.0,3.75,20.75
+"Donkey Kong,Comet,Sponge",4.0,3.25,3.75,3.25,2.75,3.0,20.0
+"Donkey Kong,Comet,Standard",4.25,3.0,4.0,3.5,2.25,2.25,19.25
+"Donkey Kong,Comet,Monster",4.25,2.5,4.5,2.75,3.0,2.25,19.25
+"Donkey Kong,Comet,Slim",4.5,2.75,4.0,3.75,1.75,2.5,19.25
+"Donkey Kong,Comet,Slick",4.75,2.75,4.25,3.5,1.25,2.5,19.0
+"Donkey Kong,Comet,Metal",4.5,2.5,4.5,3.5,1.75,2.25,19.0
+"Donkey Kong,Pipe Frame,Roller",3.75,3.5,3.5,3.5,2.75,3.5,20.5
+"Donkey Kong,Pipe Frame,Sponge",4.0,2.75,3.75,3.0,3.5,2.75,19.75
+"Donkey Kong,Pipe Frame,Standard",4.25,2.5,4.0,3.25,3.0,2.0,19.0
+"Donkey Kong,Pipe Frame,Monster",4.25,2.0,4.5,2.5,3.75,2.0,19.0
+"Donkey Kong,Pipe Frame,Slim",4.5,2.25,4.0,3.5,2.5,2.25,19.0
+"Donkey Kong,Pipe Frame,Slick",4.75,2.25,4.25,3.25,2.0,2.25,18.75
+"Donkey Kong,Pipe Frame,Metal",4.5,2.0,4.5,3.25,2.5,2.0,18.75
+"Donkey Kong,Standard Kart,Roller",3.75,3.25,3.75,3.0,3.25,3.25,20.25
+"Donkey Kong,Standard Kart,Sponge",4.0,2.5,4.0,2.5,4.0,2.5,19.5
+"Donkey Kong,Standard Kart,Standard",4.25,2.25,4.25,2.75,3.5,1.75,18.75
+"Donkey Kong,Standard Kart,Monster",4.25,1.75,4.75,2.0,4.25,1.75,18.75
+"Donkey Kong,Standard Kart,Slim",4.5,2.0,4.25,3.0,3.0,2.0,18.75
+"Donkey Kong,Standard Kart,Slick",4.75,2.0,4.5,2.75,2.5,2.0,18.5
+"Donkey Kong,Standard Kart,Metal",4.5,1.75,4.75,2.75,3.0,1.75,18.5
+"Donkey Kong,Mach 8,Roller",4.25,3.0,4.0,3.0,2.75,2.75,19.75
+"Donkey Kong,Mach 8,Sponge",4.5,2.25,4.25,2.5,3.5,2.0,19.0
+"Donkey Kong,Mach 8,Standard",4.75,2.0,4.5,2.75,3.0,1.25,18.25
+"Donkey Kong,Mach 8,Monster",4.75,1.5,5.0,2.0,3.75,1.25,18.25
+"Donkey Kong,Mach 8,Slim",5.0,1.75,4.5,3.0,2.5,1.5,18.25
+"Donkey Kong,Mach 8,Slick",5.25,1.75,4.75,2.75,2.0,1.5,18.0
+"Donkey Kong,Mach 8,Metal",5.0,1.5,5.0,2.75,2.5,1.25,18.0
+"Donkey Kong,Steel Driver,Roller",3.75,2.75,4.25,2.5,3.75,2.5,19.5
+"Donkey Kong,Steel Driver,Sponge",4.0,2.0,4.5,2.0,4.5,1.75,18.75
+"Donkey Kong,Steel Driver,Standard",4.25,1.75,4.75,2.25,4.0,1.0,18.0
+"Donkey Kong,Steel Driver,Monster",4.25,1.25,5.25,1.5,4.75,1.0,18.0
+"Donkey Kong,Steel Driver,Slim",4.5,1.5,4.75,2.5,3.5,1.25,18.0
+"Donkey Kong,Steel Driver,Slick",4.75,1.5,5.0,2.25,3.0,1.25,17.75
+"Donkey Kong,Steel Driver,Metal",4.5,1.25,5.25,2.25,3.5,1.0,17.75
+"Donkey Kong,Circuit Special,Roller",4.25,3.0,4.0,3.0,2.25,2.75,19.25
+"Donkey Kong,Circuit Special,Sponge",4.5,2.25,4.25,2.5,3.0,2.0,18.5
+"Donkey Kong,Circuit Special,Standard",4.75,2.0,4.5,2.75,2.5,1.25,17.75
+"Donkey Kong,Circuit Special,Monster",4.75,1.5,5.0,2.0,3.25,1.25,17.75
+"Donkey Kong,Circuit Special,Slim",5.0,1.75,4.5,3.0,2.0,1.5,17.75
+"Donkey Kong,Circuit Special,Slick",5.25,1.75,4.75,2.75,1.5,1.5,17.5
+"Donkey Kong,Circuit Special,Metal",5.0,1.5,5.0,2.75,2.0,1.25,17.5
+"Metal Mario,Biddybuggy,Roller",3.0,4.25,3.75,3.5,2.75,4.25,21.5
+"Metal Mario,Biddybuggy,Sponge",3.25,3.5,4.0,3.0,3.5,3.5,20.75
+"Metal Mario,Biddybuggy,Standard",3.5,3.25,4.25,3.25,3.0,2.75,20.0
+"Metal Mario,Biddybuggy,Monster",3.5,2.75,4.75,2.5,3.75,2.75,20.0
+"Metal Mario,Biddybuggy,Slim",3.75,3.0,4.25,3.5,2.5,3.0,20.0
+"Metal Mario,Biddybuggy,Slick",4.0,3.0,4.5,3.25,2.0,3.0,19.75
+"Metal Mario,Biddybuggy,Metal",3.75,2.75,4.75,3.25,2.5,2.75,19.75
+"Metal Mario,Comet,Roller",3.75,3.75,4.0,3.75,1.75,3.75,20.75
+"Metal Mario,Comet,Sponge",4.0,3.0,4.25,3.25,2.5,3.0,20.0
+"Metal Mario,Comet,Standard",4.25,2.75,4.5,3.5,2.0,2.25,19.25
+"Metal Mario,Comet,Monster",4.25,2.25,5.0,2.75,2.75,2.25,19.25
+"Metal Mario,Comet,Slim",4.5,2.5,4.5,3.75,1.5,2.5,19.25
+"Metal Mario,Comet,Slick",4.75,2.5,4.75,3.5,1.0,2.5,19.0
+"Metal Mario,Comet,Metal",4.5,2.25,5.0,3.5,1.5,2.25,19.0
+"Metal Mario,Pipe Frame,Roller",3.75,3.25,4.0,3.5,2.5,3.5,20.5
+"Metal Mario,Pipe Frame,Sponge",4.0,2.5,4.25,3.0,3.25,2.75,19.75
+"Metal Mario,Pipe Frame,Standard",4.25,2.25,4.5,3.25,2.75,2.0,19.0
+"Metal Mario,Pipe Frame,Monster",4.25,1.75,5.0,2.5,3.5,2.0,19.0
+"Metal Mario,Pipe Frame,Slim",4.5,2.0,4.5,3.5,2.25,2.25,19.0
+"Metal Mario,Pipe Frame,Slick",4.75,2.0,4.75,3.25,1.75,2.25,18.75
+"Metal Mario,Pipe Frame,Metal",4.5,1.75,5.0,3.25,2.25,2.0,18.75
+"Metal Mario,Standard Kart,Roller",3.75,3.0,4.25,3.0,3.0,3.25,20.25
+"Metal Mario,Standard Kart,Sponge",4.0,2.25,4.5,2.5,3.75,2.5,19.5
+"Metal Mario,Standard Kart,Standard",4.25,2.0,4.75,2.75,3.25,1.75,18.75
+"Metal Mario,Standard Kart,Monster",4.25,1.5,5.25,2.0,4.0,1.75,18.75
+"Metal Mario,Standard Kart,Slim",4.5,1.75,4.75,3.0,2.75,2.0,18.75
+"Metal Mario,Standard Kart,Slick",4.75,1.75,5.0,2.75,2.25,2.0,18.5
+"Metal Mario,Standard Kart,Metal",4.5,1.5,5.25,2.75,2.75,1.75,18.5
+"Metal Mario,Mach 8,Roller",4.25,2.75,4.5,3.0,2.5,2.75,19.75
+"Metal Mario,Mach 8,Sponge",4.5,2.0,4.75,2.5,3.25,2.0,19.0
+"Metal Mario,Mach 8,Standard",4.75,1.75,5.0,2.75,2.75,1.25,18.25
+"Metal Mario,Mach 8,Monster",4.75,1.25,5.5,2.0,3.5,1.25,18.25
+"Metal Mario,Mach 8,Slim",5.0,1.5,5.0,3.0,2.25,1.5,18.25
+"Metal Mario,Mach 8,Slick",5.25,1.5,5.25,2.75,1.75,1.5,18.0
+"Metal Mario,Mach 8,Metal",5.0,1.25,5.5,2.75,2.25,1.25,18.0
+"Metal Mario,Steel Driver,Roller",3.75,2.5,4.75,2.5,3.5,2.5,19.5
+"Metal Mario,Steel Driver,Sponge",4.0,1.75,5.0,2.0,4.25,1.75,18.75
+"Metal Mario,Steel Driver,Standard",4.25,1.5,5.25,2.25,3.75,1.0,18.0
+"Metal Mario,Steel Driver,Monster",4.25,1.0,5.75,1.5,4.5,1.0,18.0
+"Metal Mario,Steel Driver,Slim",4.5,1.25,5.25,2.5,3.25,1.25,18.0
+"Metal Mario,Steel Driver,Slick",4.75,1.25,5.5,2.25,2.75,1.25,17.75
+"Metal Mario,Steel Driver,Metal",4.5,1.0,5.75,2.25,3.25,1.0,17.75
+"Metal Mario,Circuit Special,Roller",4.25,2.75,4.5,3.0,2.0,2.75,19.25
+"Metal Mario,Circuit Special,Sponge",4.5,2.0,4.75,2.5,2.75,2.0,18.5
+"Metal Mario,Circuit Special,Standard",4.75,1.75,5.0,2.75,2.25,1.25,17.75
+"Metal Mario,Circuit Special,Monster",4.75,1.25,5.5,2.0,3.0,1.25,17.75
+"Metal Mario,Circuit Special,Slim",5.0,1.5,5.0,3.0,1.75,1.5,17.75
+"Metal Mario,Circuit Special,Slick",5.25,1.5,5.25,2.75,1.25,1.5,17.5
+"Metal Mario,Circuit Special,Metal",5.0,1.25,5.5,2.75,1.75,1.25,17.5
+"Bowser,Biddybuggy,Roller",3.5,4.25,3.75,3.0,2.75,4.25,21.5
+"Bowser,Biddybuggy,Sponge",3.75,3.5,4.0,2.5,3.5,3.5,20.75
+"Bowser,Biddybuggy,Standard",4.0,3.25,4.25,2.75,3.0,2.75,20.0
+"Bowser,Biddybuggy,Monster",4.0,2.75,4.75,2.0,3.75,2.75,20.0
+"Bowser,Biddybuggy,Slim",4.25,3.0,4.25,3.0,2.5,3.0,20.0
+"Bowser,Biddybuggy,Slick",4.5,3.0,4.5,2.75,2.0,3.0,19.75
+"Bowser,Biddybuggy,Metal",4.25,2.75,4.75,2.75,2.5,2.75,19.75
+"Bowser,Comet,Roller",4.25,3.75,4.0,3.25,1.75,3.75,20.75
+"Bowser,Comet,Sponge",4.5,3.0,4.25,2.75,2.5,3.0,20.0
+"Bowser,Comet,Standard",4.75,2.75,4.5,3.0,2.0,2.25,19.25
+"Bowser,Comet,Monster",4.75,2.25,5.0,2.25,2.75,2.25,19.25
+"Bowser,Comet,Slim",5.0,2.5,4.5,3.25,1.5,2.5,19.25
+"Bowser,Comet,Slick",5.25,2.5,4.75,3.0,1.0,2.5,19.0
+"Bowser,Comet,Metal",5.0,2.25,5.0,3.0,1.5,2.25,19.0
+"Bowser,Pipe Frame,Roller",4.25,3.25,4.0,3.0,2.5,3.5,20.5
+"Bowser,Pipe Frame,Sponge",4.5,2.5,4.25,2.5,3.25,2.75,19.75
+"Bowser,Pipe Frame,Standard",4.75,2.25,4.5,2.75,2.75,2.0,19.0
+"Bowser,Pipe Frame,Monster",4.75,1.75,5.0,2.0,3.5,2.0,19.0
+"Bowser,Pipe Frame,Slim",5.0,2.0,4.5,3.0,2.25,2.25,19.0
+"Bowser,Pipe Frame,Slick",5.25,2.0,4.75,2.75,1.75,2.25,18.75
+"Bowser,Pipe Frame,Metal",5.0,1.75,5.0,2.75,2.25,2.0,18.75
+"Bowser,Standard Kart,Roller",4.25,3.0,4.25,2.5,3.0,3.25,20.25
+"Bowser,Standard Kart,Sponge",4.5,2.25,4.5,2.0,3.75,2.5,19.5
+"Bowser,Standard Kart,Standard",4.75,2.0,4.75,2.25,3.25,1.75,18.75
+"Bowser,Standard Kart,Monster",4.75,1.5,5.25,1.5,4.0,1.75,18.75
+"Bowser,Standard Kart,Slim",5.0,1.75,4.75,2.5,2.75,2.0,18.75
+"Bowser,Standard Kart,Slick",5.25,1.75,5.0,2.25,2.25,2.0,18.5
+"Bowser,Standard Kart,Metal",5.0,1.5,5.25,2.25,2.75,1.75,18.5
+"Bowser,Mach 8,Roller",4.75,2.75,4.5,2.5,2.5,2.75,19.75
+"Bowser,Mach 8,Sponge",5.0,2.0,4.75,2.0,3.25,2.0,19.0
+"Bowser,Mach 8,Standard",5.25,1.75,5.0,2.25,2.75,1.25,18.25
+"Bowser,Mach 8,Monster",5.25,1.25,5.5,1.5,3.5,1.25,18.25
+"Bowser,Mach 8,Slim",5.5,1.5,5.0,2.5,2.25,1.5,18.25
+"Bowser,Mach 8,Slick",5.75,1.5,5.25,2.25,1.75,1.5,18.0
+"Bowser,Mach 8,Metal",5.5,1.25,5.5,2.25,2.25,1.25,18.0
+"Bowser,Steel Driver,Roller",4.25,2.5,4.75,2.0,3.5,2.5,19.5
+"Bowser,Steel Driver,Sponge",4.5,1.75,5.0,1.5,4.25,1.75,18.75
+"Bowser,Steel Driver,Standard",4.75,1.5,5.25,1.75,3.75,1.0,18.0
+"Bowser,Steel Driver,Monster",4.75,1.0,5.75,1.0,4.5,1.0,18.0
+"Bowser,Steel Driver,Slim",5.0,1.25,5.25,2.0,3.25,1.25,18.0
+"Bowser,Steel Driver,Slick",5.25,1.25,5.5,1.75,2.75,1.25,17.75
+"Bowser,Steel Driver,Metal",5.0,1.0,5.75,1.75,3.25,1.0,17.75
+"Bowser,Circuit Special,Roller",4.75,2.75,4.5,2.5,2.0,2.75,19.25
+"Bowser,Circuit Special,Sponge",5.0,2.0,4.75,2.0,2.75,2.0,18.5
+"Bowser,Circuit Special,Standard",5.25,1.75,5.0,2.25,2.25,1.25,17.75
+"Bowser,Circuit Special,Monster",5.25,1.25,5.5,1.5,3.0,1.25,17.75
+"Bowser,Circuit Special,Slim",5.5,1.5,5.0,2.5,1.75,1.5,17.75
+"Bowser,Circuit Special,Slick",5.75,1.5,5.25,2.25,1.25,1.5,17.5
+"Bowser,Circuit Special,Metal",5.5,1.25,5.5,2.25,1.75,1.25,17.5
