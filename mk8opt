@@ -1,6 +1,5 @@
 #!/usr/bin/env ruby
 require 'csv'
-require 'pry'
 
 if ARGV.first == '-h'
     puts %{ usage: ./mk8opt [s a w h t m]
