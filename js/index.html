@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mario Kart Ocho Optimizer</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.9/d3.min.js"></script>
+	<script src="/live.js"></script>
+	<style type="text/css">
+
+	body { max-width: 90%; height: 100%; margin: 0 auto; }
+    input[type='checkbox'] { padding: 0.3em; vertical-align: middle; }
+    label { padding: 0.5em; }
+    table { width: 100%; empty-cells: show; }
+    td,th { width: 8%; }
+    .combo { clear: right; }
+    .opts { float:left; clear: right; width:100%;}
+    .opt { float:left; clear: none; width: 33%;}
+    /*.options div { float: left; padding: 1em; }*/
+    .options p { margin: 0.3em 0.5em; }
+    /*img { width: 100px; height: 64px; }*/
+    .stat { opacity: 0.2; }
+    .row { padding-bottom: 1em; }
+
+    .row:hover .stat { opacity: 1; }
+
+    @media (max-width: 700px) {
+        td:nth-of-type(1):before { content: "Speed(Ground)" }
+        td:nth-of-type(2):before { content: "Speed(Water)" }
+        td:nth-of-type(3):before { content: "Speed(Air)" }
+        td:nth-of-type(4):before { content: "Speed(Anti-Gravity)" }
+        td:nth-of-type(5):before { content: "Acceleration" }
+        td:nth-of-type(6):before { content: "Weight" }
+        td:nth-of-type(7):before { content: "Handling(Ground)" }
+        td:nth-of-type(8):before { content: "Handling(Water)" }
+        td:nth-of-type(9):before { content: "Handling(Air)" }
+        td:nth-of-type(10):before { content: "Handling(Anti-Gravity)" }
+        td:nth-of-type(11):before { content: "Traction" }
+        td:nth-of-type(12):before { content: "Mini-Turbo" }
+
+        table,tr,td { float:left; display: block; width:100%;}
+        th { display: none; }
+        td:before { clear: left; float:left; display: block; width:45%; }
+
+    }
+	</style>
+</head>
+<body>
+    <h1>optimize</h1>
+    <p>requires javascript. no js? <a href="/mk8opt.php">try the first version</a></p>
+    <!-- empty action == submit to self, handy! -->
+    <form action="" method="GET">
+        <label for="s"><input type="checkbox" name="s" id="s">speed</label>
+        <label for="a"><input type="checkbox" name="a" id="a">acceleration</label>
+        <label for="w"><input type="checkbox" name="w" id="w">weight</label>
+        <label for="h"><input type="checkbox" name="h" id="h">handling</label>
+        <label for="t"><input type="checkbox" name="t" id="t">traction</label>
+        <label for="m"><input type="checkbox" name="m" id="m">mini-turbo</label>
+        <button onclick='return false' id='halp'>toggle help</button>
+        <button type="submit">sort!</button>
+    </form>
+    <p id='halptaxt'>
+        click a checkbox to sort by that criteria<br/>
+        spread factors into placement ie: for two values [3.5, 3.5] will appear above [3, 4] even though they average the same<br/>
+        click a combination name to see character/vehicle/wheel options for that build<br/>
+        quantization of acceleration is accounted for<br/>
+        speed and handling are considered as the average of their terrains values<br/>
+        there are only two kinds of gliders, adding them here would be pointless<br/>
+        consider using <a href="http://mk8builder.com/">mk8builder.com</a> to see how modifications factor in
+    </p>
+<!--
+	<table>
+        <thead>
+            <tr>
+                <th colspan='4'>Speed</th>
+                <th>Acceleration</th>
+                <th>Weight</th>
+                <th colspan='4'>Handling</th>
+                <th>Traction</th>
+                <th>Mini-Turbo</th>
+            </tr>
+            <tr>
+                <th>Ground</th>
+                <th>Water</th>
+                <th>Air</th>
+                <th>Anti-Gravity</th>
+                <th></th>
+                <th></th>
+                <th>Ground</th>
+                <th>Water</th>
+                <th>Air</th>
+                <th>Anti-Gravity</th>
+                <th></th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+	</table>
+-->
+    <div id='listing'></div>
+
+
+<script type='text/javascript' src='mk8.js'></script>
+<script type='text/javascript'> 
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-46754171-3']);
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+</script> 
+</body>
+</html>
