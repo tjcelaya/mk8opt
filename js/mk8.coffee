@@ -6,7 +6,17 @@ boxen = document.querySelectorAll 'form input'
 halptaxt = document.querySelector '#halptaxt'
 stats = document.querySelectorAll '.stat'
 
-# unique IDs automatically become properties of the window object, TIL!
+# unique IDs automatically become properties of the window object, T.I.L.!
+
+document.querySelector '#halp'
+  .addEventListener 'click', (e) ->
+    if 'false' == this.getAttribute 'data-toggle'
+      this.setAttribute 'data-toggle', 'true'
+      halptaxt.setAttribute 'style', 'display:block'
+    else
+      this.setAttribute 'data-toggle', 'false'
+      halptaxt.setAttribute 'style', 'display:none'
+
 
 score = (combo, keys) ->
   return 0 unless keys.length isnt 0
@@ -35,16 +45,14 @@ score = (combo, keys) ->
 
   calculate_deviations = (a, b) -> a + (b - avg_of_vals) ** 2
 
-  deviations = vals.reduce calculate_deviations, 0
-  # L "avg: #{avg_of_vals} \t deviations: #{deviations} \t vals: #{vals}"
-  (sum ** 2) / (1 + deviations ** 2)
+  deviation = vals.reduce calculate_deviations, 0
+
+  (sum ** 2) / (1 + deviation ** 2)
 
 d3.json 'combined.json', (err, json_data) -> 
   if err
     L err
     throw new Error 'Error getting data'
-
-  # L json_data
 
   rows = d3.select('#listing')
     .selectAll('div')
@@ -104,17 +112,17 @@ d3.json 'combined.json', (err, json_data) ->
             </tr>
           </thead>
           <tr>
-          <td>#{d.value.Speed.Ground}</td>
-          <td>#{d.value.Speed.Water}</td>
-          <td>#{d.value.Speed.Air}</td>
-          <td>#{d.value.Speed["Anti-Gravity"]}</td>
-          <td>#{d.value.Acceleration}</td>
-          <td>#{d.value.Weight}</td>
-          <td>#{d.value.Handling.Ground}</td>
-          <td>#{d.value.Handling.Water}</td>
-          <td>#{d.value.Handling.Air}</td>
-          <td>#{d.value.Handling["Anti-Gravity"]}</td>
-          <td>#{d.value.Traction}</td>
+          <td>#{d.value["Speed"]["Ground"]}</td>
+          <td>#{d.value["Speed"]["Water"]}</td>
+          <td>#{d.value["Speed"]["Air"]}</td>
+          <td>#{d.value["Speed"]["Anti-Gravity"]}</td>
+          <td>#{d.value["Acceleration"]}</td>
+          <td>#{d.value["Weight"]}</td>
+          <td>#{d.value["Handling"]["Ground"]}</td>
+          <td>#{d.value["Handling"]["Water"]}</td>
+          <td>#{d.value["Handling"]["Air"]}</td>
+          <td>#{d.value["Handling"]["Anti-Gravity"]}</td>
+          <td>#{d.value["Traction"]}</td>
           <td>#{d.value["Mini-Turbo"]}</td>
           </tr>
         </table>
@@ -123,7 +131,6 @@ d3.json 'combined.json', (err, json_data) ->
     .classed('row', true)
     .each (d, i) ->
       this.addEventListener 'click', (e) ->
-        L this.childNodes
         if 'true' == this.getAttribute 'data-toggle'
           this.setAttribute 'data-toggle', 'false'
           this.querySelector('.optnames').setAttribute 'style', 'display: none'
@@ -139,30 +146,14 @@ d3.json 'combined.json', (err, json_data) ->
 
     for b in boxen when b.checked is true
       switch b.name
-        when 's'
-          sorting_by.push "Speed"
-        when 'a'
-          sorting_by.push "Acceleration"
-        when 'w'
-          sorting_by.push "Weight"
-        when 'h'
-          sorting_by.push "Handling"
-        when 't'
-          sorting_by.push "Traction"
-        when 'm'
-          sorting_by.push "Mini-Turbo"
+        when 's' sorting_by.push "Speed"
+        when 'a' sorting_by.push "Acceleration"
+        when 'w' sorting_by.push "Weight"
+        when 'h' sorting_by.push "Handling"
+        when 't' sorting_by.push "Traction"
+        when 'm' sorting_by.push "Mini-Turbo"
 
     return if sorting_by.length == 0
 
     d3.selectAll('.row').sort (a, b) ->
-      score( b.value, sorting_by) - score( a.value, sorting_by)
-
-
-document.querySelector '#halp'
-  .addEventListener 'click', (e) ->
-    if 'false' == this.getAttribute 'data-toggle'
-      this.setAttribute 'data-toggle', 'true'
-      halptaxt.setAttribute 'style', 'display:block'
-    else
-      this.setAttribute 'data-toggle', 'false'
-      halptaxt.setAttribute 'style', 'display:none'
+      score(b.value, sorting_by) - score(a.value, sorting_by)
