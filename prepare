@@ -7,10 +7,13 @@ class Hash
             raise ArgumentError, "Keys must match" 
         end
         
+
         result = {}
         self.keys.each do |k|
             if k == 'Name'
                 result[k] = self[k] + "," + otherHash[k]
+            elsif self[k].class == Hash
+                self[k] = self[k] + otherHash[k]
             else
                 result[k] = Float(self[k]) + Float(otherHash[k])
             end
@@ -49,7 +52,7 @@ chars_vehicles_wheels = []
 
 {'MK8C.csv' => chars,
  'MK8V.csv' => vehicles,
- 'MK8W.csv' => wheels}.each_pair do |file,var| 
+ 'MK8W.csv' => wheels}.each_pair do |file, var|
     CSV.foreach(file, {:headers => true}) { |l| var << l.to_hash }
 end
 

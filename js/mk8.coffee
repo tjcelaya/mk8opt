@@ -33,7 +33,7 @@ score = (combo, keys) ->
 
   avg_of_vals = (vals.reduce (a, b) -> a + b) / keys.length
 
-  calculate_deviations = (a, b) -> a + (b - avg_of_vals)
+  calculate_deviations = (a, b) -> a + (b - avg_of_vals) ** 2
 
   deviations = vals.reduce calculate_deviations, 0
   # L "avg: #{avg_of_vals} \t deviations: #{deviations} \t vals: #{vals}"
@@ -65,11 +65,18 @@ d3.json 'combined.json', (err, json_data) ->
         tire_images.push "<img title='#{t}' alt='#{t}' src='img/#{t.replace(space_regex, '').replace('.','')}Tires.png' height='64px' width='100px'/>"
 
       """
-        <div class='combo'>#{d.key}</div>
+        <div style='visibility:hidden' class='combo'>#{d.key}</div>
         <div class='opts'>
           <div class='opt charopts'>#{char_images.join ""}</div>
           <div class='opt vehicleopts'>#{vehicle_images.join ""}</div>
           <div class='opt wheelsopts'>#{tire_images.join ""}</div>
+          <hr/>
+        </div>
+        <div style='display:none' class='optnames'>
+          <div class='opt charopts'><p>#{d.value.Options[0].join "</p><p>"}</p></div>
+          <div class='opt vehicleopts'><p>#{d.value.Options[1].join "</p><p>"}</p></div>
+          <div class='opt wheelsopts'><p>#{d.value.Options[2].join "</p><p>"}</p></div>
+          <hr/>
         </div>
         <table class='stat'>
           <thead>
@@ -111,19 +118,20 @@ d3.json 'combined.json', (err, json_data) ->
           <td>#{d.value["Mini-Turbo"]}</td>
           </tr>
         </table>
-
-        <br style='clear:both;'/>
+        <br style='clear:both';/>
       """
     .classed('row', true)
     .each (d, i) ->
-      L this.childNodes
       this.addEventListener 'click', (e) ->
+        L this.childNodes
         if 'true' == this.getAttribute 'data-toggle'
           this.setAttribute 'data-toggle', 'false'
-          this.childNodes[4].setAttribute 'style', 'opacity: 0.2'
+          this.querySelector('.optnames').setAttribute 'style', 'display: none'
+          this.querySelector('.stat').removeAttribute 'style'
         else
           this.setAttribute 'data-toggle', 'true'
-          this.childNodes[4].setAttribute 'style', 'opacity: 1'
+          this.querySelector('.optnames').setAttribute 'style', 'display: block'
+          this.querySelector('.stat').setAttribute 'style', 'opacity: 1'
   
   d3.selectAll('form input').data(d3.entries json_data).on 'click', (c) ->
 

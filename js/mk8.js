@@ -46,7 +46,7 @@
       return a + b;
     })) / keys.length;
     calculate_deviations = function(a, b) {
-      return a + (b - avg_of_vals);
+      return a + Math.pow(b - avg_of_vals, 2);
     };
     deviations = vals.reduce(calculate_deviations, 0);
     return (Math.pow(sum, 2)) / (1 + Math.pow(deviations, 2));
@@ -79,16 +79,18 @@
         t = _ref2[_k];
         tire_images.push("<img title='" + t + "' alt='" + t + "' src='img/" + (t.replace(space_regex, '').replace('.', '')) + "Tires.png' height='64px' width='100px'/>");
       }
-      return "<div class='combo'>" + d.key + "</div>\n<div class='opts'>\n  <div class='opt charopts'>" + (char_images.join("")) + "</div>\n  <div class='opt vehicleopts'>" + (vehicle_images.join("")) + "</div>\n  <div class='opt wheelsopts'>" + (tire_images.join("")) + "</div>\n</div>\n<table class='stat'>\n  <thead>\n    <tr>\n        <th colspan='4'>Speed</th>\n        <th>Acceleration</th>\n        <th>Weight</th>\n        <th colspan='4'>Handling</th>\n        <th>Traction</th>\n        <th>Mini-Turbo</th>\n    </tr>\n    <tr>\n        <th>Ground</th>\n        <th>Water</th>\n        <th>Air</th>\n        <th>Anti-Gravity</th>\n        <th></th>\n        <th></th>\n        <th>Ground</th>\n        <th>Water</th>\n        <th>Air</th>\n        <th>Anti-Gravity</th>\n        <th></th>\n        <th></th>\n    </tr>\n  </thead>\n  <tr>\n  <td>" + d.value.Speed.Ground + "</td>\n  <td>" + d.value.Speed.Water + "</td>\n  <td>" + d.value.Speed.Air + "</td>\n  <td>" + d.value.Speed["Anti-Gravity"] + "</td>\n  <td>" + d.value.Acceleration + "</td>\n  <td>" + d.value.Weight + "</td>\n  <td>" + d.value.Handling.Ground + "</td>\n  <td>" + d.value.Handling.Water + "</td>\n  <td>" + d.value.Handling.Air + "</td>\n  <td>" + d.value.Handling["Anti-Gravity"] + "</td>\n  <td>" + d.value.Traction + "</td>\n  <td>" + d.value["Mini-Turbo"] + "</td>\n  </tr>\n</table>\n\n<br style='clear:both;'/>";
+      return "<div style='visibility:hidden' class='combo'>" + d.key + "</div>\n<div class='opts'>\n  <div class='opt charopts'>" + (char_images.join("")) + "</div>\n  <div class='opt vehicleopts'>" + (vehicle_images.join("")) + "</div>\n  <div class='opt wheelsopts'>" + (tire_images.join("")) + "</div>\n  <hr/>\n</div>\n<div style='display:none' class='optnames'>\n  <div class='opt charopts'><p>" + (d.value.Options[0].join("</p><p>")) + "</p></div>\n  <div class='opt vehicleopts'><p>" + (d.value.Options[1].join("</p><p>")) + "</p></div>\n  <div class='opt wheelsopts'><p>" + (d.value.Options[2].join("</p><p>")) + "</p></div>\n  <hr/>\n</div>\n<table class='stat'>\n  <thead>\n    <tr>\n        <th colspan='4'>Speed</th>\n        <th>Acceleration</th>\n        <th>Weight</th>\n        <th colspan='4'>Handling</th>\n        <th>Traction</th>\n        <th>Mini-Turbo</th>\n    </tr>\n    <tr>\n        <th>Ground</th>\n        <th>Water</th>\n        <th>Air</th>\n        <th>Anti-Gravity</th>\n        <th></th>\n        <th></th>\n        <th>Ground</th>\n        <th>Water</th>\n        <th>Air</th>\n        <th>Anti-Gravity</th>\n        <th></th>\n        <th></th>\n    </tr>\n  </thead>\n  <tr>\n  <td>" + d.value.Speed.Ground + "</td>\n  <td>" + d.value.Speed.Water + "</td>\n  <td>" + d.value.Speed.Air + "</td>\n  <td>" + d.value.Speed["Anti-Gravity"] + "</td>\n  <td>" + d.value.Acceleration + "</td>\n  <td>" + d.value.Weight + "</td>\n  <td>" + d.value.Handling.Ground + "</td>\n  <td>" + d.value.Handling.Water + "</td>\n  <td>" + d.value.Handling.Air + "</td>\n  <td>" + d.value.Handling["Anti-Gravity"] + "</td>\n  <td>" + d.value.Traction + "</td>\n  <td>" + d.value["Mini-Turbo"] + "</td>\n  </tr>\n</table>\n<br style='clear:both';/>";
     }).classed('row', true).each(function(d, i) {
-      L(this.childNodes);
       return this.addEventListener('click', function(e) {
+        L(this.childNodes);
         if ('true' === this.getAttribute('data-toggle')) {
           this.setAttribute('data-toggle', 'false');
-          return this.childNodes[4].setAttribute('style', 'opacity: 0.2');
+          this.querySelector('.optnames').setAttribute('style', 'display: none');
+          return this.querySelector('.stat').removeAttribute('style');
         } else {
           this.setAttribute('data-toggle', 'true');
-          return this.childNodes[4].setAttribute('style', 'opacity: 1');
+          this.querySelector('.optnames').setAttribute('style', 'display: block');
+          return this.querySelector('.stat').setAttribute('style', 'opacity: 1');
         }
       });
     });
