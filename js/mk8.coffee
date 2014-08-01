@@ -146,12 +146,12 @@ d3.json 'combined.json', (err, json_data) ->
 
     for b in boxen when b.checked is true
       switch b.name
-        when 's' sorting_by.push "Speed"
-        when 'a' sorting_by.push "Acceleration"
-        when 'w' sorting_by.push "Weight"
-        when 'h' sorting_by.push "Handling"
-        when 't' sorting_by.push "Traction"
-        when 'm' sorting_by.push "Mini-Turbo"
+        when 's' then sorting_by.push "Speed"
+        when 'a' then sorting_by.push "Acceleration"
+        when 'w' then sorting_by.push "Weight"
+        when 'h' then sorting_by.push "Handling"
+        when 't' then sorting_by.push "Traction"
+        when 'm' then sorting_by.push "Mini-Turbo"
 
     return if sorting_by.length == 0
 
