@@ -23,7 +23,8 @@
           "Cat Cruiser",
           "Prancer",
           "Sneeker",
-          "Teddy Buggy"
+          "Teddy Buggy",
+          "300 SL Roadster"
         ]
       },
       "Light": {
@@ -91,7 +92,8 @@
           "Mach 8",
           "Circuit Special",
           "Sports Coupe",
-          "Gold Standard"
+          "Gold Standard",
+          "B Dasher"
         ]
       },
       "Offroad": {
@@ -115,7 +117,50 @@
           "Steel Driver",
           "Tri-Speeder",
           "Badwagon",
-          "Standard ATV"
+          "Standard ATV",
+          "GLA"
+        ]
+      },
+      "Blue Falcon": {
+        "Speed": {
+          "Ground": 0.25,
+          "Water": 0,
+          "Air": 0,
+          "Anti-Gravity": 0
+        },
+        "Acceleration": 0.25,
+        "Weight": -0.25,
+        "Handling": {
+          "Ground": 0,
+          "Water": 0,
+          "Air": 0,
+          "Anti-Gravity": 0
+        },
+        "Traction": -0.5,
+        "Mini-Turbo": 0,
+        "Options": [
+          "Blue Falcon"
+        ]
+      },
+      "Tanooki Kart": {
+        "Speed": {
+          "Ground": 0.25,
+          "Water": 0,
+          "Air": 0,
+          "Anti-Gravity": 0
+        },
+        "Acceleration": 0.25,
+        "Weight": -0.25,
+        "Handling": {
+          "Ground": 0,
+          "Water": 0,
+          "Air": 0,
+          "Anti-Gravity": 0
+        },
+        "Traction": -0.5,
+        "Mini-Turbo": 0,
+        "Options": [
+          "Tanooki Kart"
         ]
       }
     },
@@ -208,6 +253,27 @@
           "Jet Bike",
           "Yoshi Bike"
         ]
+      },
+      "MasterCycle": {
+        "Speed": {
+          "Ground": 0.25,
+          "Water": 0,
+          "Air": 0,
+          "Anti-Gravity": 0
+        },
+        "Acceleration": 0,
+        "Weight": 0,
+        "Handling": {
+          "Ground": 0.5,
+          "Water": 0,
+          "Air": 0,
+          "Anti-Gravity": 0
+        },
+        "Traction": -0.75,
+        "Mini-Turbo": 0,
+        "Options": [
+          "Master Cycle"
+        ]
       }
     }
   },
@@ -266,6 +332,27 @@
         "Wendy"
       ]
     },
+    "MediumCatPeach": {
+      "Speed": {
+        "Ground": 3.25,
+        "Water": 3.75,
+        "Air": 3.25,
+        "Anti-Gravity": 3.5
+      },
+      "Acceleration": 3,
+      "Weight": 3,
+      "Handling": {
+        "Ground": 3.75,
+        "Water": 3.75,
+        "Air": 3.5,
+        "Anti-Gravity": 4
+      },
+      "Traction": 4,
+      "Mini-Turbo": 2.5,
+      "Options": [
+        "CatPeach"
+      ]
+    },
     "Medium1": {
       "Speed": {
         "Ground": 3.25,
@@ -287,6 +374,27 @@
         "Peach",
         "Daisy",
         "Yoshi"
+      ]
+    },
+    "MediumTanookiMario": {
+      "Speed": {
+        "Ground": 3.75,
+        "Water": 4.25,
+        "Air": 3.75,
+        "Anti-Gravity": 4
+      },
+      "Acceleration": 2.75,
+      "Weight": 3.5,
+      "Handling": {
+        "Ground": 3.25,
+        "Water": 3.25,
+        "Air": 3,
+        "Anti-Gravity": 3.5
+      },
+      "Traction": 3.75,
+      "Mini-Turbo": 2.25,
+      "Options": [
+        "TanookiMario"
       ]
     },
     "Medium2": {
@@ -407,7 +515,8 @@
           "Standard",
           "Off-Road", 
           "Blue Standard",
-          "Retro Off-Road"
+          "Retro Off-Road",
+          "GLA Tires"
         ]
     },
     "Monster": {
@@ -497,7 +606,8 @@
         "Mini-Turbo": 0.25,
         "Options": [
           "Slim",
-          "Crimson Slim"
+          "Crimson Slim",
+          "Triforce Tires"
         ]
     },
     "Slick": {
