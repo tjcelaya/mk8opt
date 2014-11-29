@@ -22,6 +22,29 @@
         .row { padding: 2em; border-radius: 1em; box-shadow: gray 0px 10px 30px; margin-bottom: 1em; }
         .row:hover .stat { opacity: 1; }
         hr { display:block; clear:both; }
+        .hide { display: none; }
+        .combo-details { width: 70%; float: left; visibility: hidden; }
+        .chart { height: 200px; width: 30%; float:right; }
+        .bar { background-color: red; height: 16%; margin-bottom: 0.166666667% }
+        .sub-bar { height: 4%; }
+
+.chart {
+background-size: 16.66666%;
+background-image: linear-gradient(90deg, #aaa 1px, transparent 1px);
+}
+
+        .bar:nth-of-type(1)  { background-color: red; }
+        .bar:nth-of-type(2)  { background-color: red; }
+        .bar:nth-of-type(3)  { background-color: red; }
+        .bar:nth-of-type(4)  { background-color: red; }
+        .bar:nth-of-type(5)  { background-color: yellow; }
+        .bar:nth-of-type(6)  { background-color: orange; }
+        .bar:nth-of-type(7)  { background-color: green; }
+        .bar:nth-of-type(8)  { background-color: green; }
+        .bar:nth-of-type(9)  { background-color: green; }
+        .bar:nth-of-type(10) { background-color: green; }
+        .bar:nth-of-type(11) { background-color: blue; }
+        .bar:nth-of-type(12) { background-color: orange; }
 
         @media (max-width: 700px) {
             td:nth-of-type(1):before { content: "Speed(Ground)" }
@@ -56,9 +79,9 @@
         <label for="h"><input type="checkbox" name="h" id="h">  handling</label>
         <label for="t"><input type="checkbox" name="t" id="t">  traction</label>
         <label for="m"><input type="checkbox" name="m" id="m">  mini-turbo</label>
-        <button onclick='return false' id='halp'>toggle help</button>
+        <button onclick='return false' class='halp'>toggle help</button>
     </form>
-    <p id='halptaxt'>
+    <p class='halptaxt hide'>
         click a checkbox to sort by that criteria, eg: checking acceleration &amp; traction will sort by highest average combination of those two stats<br/><br/>
         any combination of the characters/vehicles/wheels in a card will give you its stats<br/><br/>
         quantization of acceleration is accounted for<br/><br/>

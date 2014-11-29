@@ -46,7 +46,8 @@
         "Mini-Turbo": 0.25,
         "Options": [
           "Pipe Frame",
-          "Wild Wiggler"
+          "Wild Wiggler",
+          "W 25 Silver Arrow"
         ]
       },
       "Very Light": {
@@ -67,7 +68,7 @@
         "Traction": -0.25,
         "Mini-Turbo": 1,
         "Options": [
-          "Biddybug",
+          "Biddybuggy",
           "Landship"
         ]
       },
