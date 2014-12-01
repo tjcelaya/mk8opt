@@ -45,15 +45,17 @@ TEMPLATIZE =  (d, i) ->
         <div class='bar traction-bar'         style='width: #{(d.value["Traction"]) / 6 * 100 + '%'}'>&nbsp;</div>
         <div class='bar miniturbo-bar'        style='width: #{(d.value["Mini-Turbo"]) / 6 * 100 + '%'}'>&nbsp;</div>
       </div>
+      <br class='clear'/>
     </div>
     <div class='details hide'>
-      <hr/>
+      <hr class='clear'/>
       <div class='optnames'>
         <div class='opt charopts'><p>#{d.value.Options[0].join "</p><p>"}</p></div>
         <div class='opt vehicleopts'><p>#{d.value.Options[1].join "</p><p>"}</p></div>
         <div class='opt wheelsopts'><p>#{d.value.Options[2].join "</p><p>"}</p></div>
-        <hr/>
+        <div class='clear'/>
       </div>
+      <hr class='clear'/>
       <table class='stat'>
         <thead>
           <tr>
@@ -98,7 +100,7 @@ TEMPLATIZE =  (d, i) ->
       </table>
     </div>
 
-    <br style='clear:both';/>
+    <br class='clear'/>
   """
 
 # unique IDs automatically become properties of the window object, T.I.L.!

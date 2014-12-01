@@ -19,7 +19,7 @@ td, th { width: 8% }
 .row { padding: 2em; border-radius: 1em; background-color: #fff; box-shadow: gray 0px 5px 10px; margin-bottom: 1em; transition: box-shadow 0.5s; }
 .row:hover { box-shadow: gray 0px 10px 50px; }
 .row:hover .stat { color: #000; }
-hr { display: block; clear: both }
+hr { display: block; clear: both; margin: 1em 0; color: #ddd; }
 .hide { display: none }
 #filter-search { width: 100%; margin-top: 1em; }
 .chart { height: 192px; width: 30%; float: right }
