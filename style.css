@@ -1,0 +1,67 @@
+html { box-sizing: border-box; margin-top: 1em; background-color: #e0e0e0;}
+*, *:before, *:after { box-sizing: inherit }
+body { max-width: 90%; height: 100%; margin: 0 auto }
+input[type='checkbox'] { padding: 0.3em; vertical-align: middle; display: none }
+form label { display: block; float: left; width: 16.666666% }
+form span { display: block; padding: 0.5em; font-size: 1em; width: 100%; padding: 1em; background-color: #EFEFEF; border-radius: 4px; border: 1px solid #D0D0D0 }
+input:checked + span { background-color: #AAA; color: #FFF }
+form, .halptaxt { margin-bottom: 1em }
+table { width: 100%; empty-cells: show }
+td, th { width: 8% }
+.clear { clear: both }
+#listing { margin-top: 1em }
+.combo { clear: right }
+.opts { float: left; clear: right; width: 70% }
+.opts .opt { text-align: center }
+.optnames .opt { width: 33%; float: left; text-align: center }
+.optnames p { margin: 0.3em 0.5em }
+.stat { color: #888 }
+.row { padding: 2em; border-radius: 1em; background-color: #fff; box-shadow: gray 0px 5px 10px; margin-bottom: 1em; transition: box-shadow 0.5s; }
+.row:hover { box-shadow: gray 0px 10px 50px; }
+.row:hover .stat { color: #000; }
+hr { display: block; clear: both }
+.hide { display: none }
+#filter-search { width: 100%; margin-top: 1em; }
+.chart { height: 192px; width: 30%; float: right }
+.bar { background-color: red; height: 17%; margin: 1px 0px }
+.sub-bar { height: 4%; margin-bottom: 0px }
+.sub-bar + .sub-bar { margin-top: 0px }
+.chart { background-size: 16.66666%; background-image: linear-gradient(90deg, #aaa 1px, transparent 1px) }
+.speed-bar, #s-button:before { background-color: red }
+.acceleration-bar, #a-button:before { background-color: rgb(255, 214, 3) }
+.weight-bar, #w-button:before { background-color: rgb(42, 186, 71) }
+.handling-bar, #h-button:before { background-color: rgb(95, 158, 160) }
+.traction-bar, #t-button:before { background-color: rgb(46, 46, 249) }
+.miniturbo-bar, #m-button:before { background-color: rgb(255, 97, 0) }
+.speed-heading { border-bottom: 3px solid red }
+.acceleration-heading { border-bottom: 3px solid rgb(255, 214, 3) }
+.weight-heading { border-bottom: 3px solid rgb(42, 186, 71) }
+.handling-heading { border-bottom: 3px solid rgb(95, 158, 160) }
+.traction-heading { border-bottom: 3px solid rgb(46, 46, 249) }
+.miniturbo-heading { border-bottom: 3px solid rgb(255, 97, 0) }
+tbody { margin-top: 1em }
+.form-button:before { content: ''; display: inline-block; height: 1em; width: 1em; white-space: pre; vertical-align: middle; margin-right: 1em }
+@media (max-width:1000px) {
+    form label { width: 33.3333% }
+}
+@media (max-width: 500px) {
+    form label { width: 100% }
+}
+@media (max-width:700px) {
+    td:nth-of-type(1):before { content: "Speed(Ground)" }
+    td:nth-of-type(2):before { content: "Speed(Water)" }
+    td:nth-of-type(3):before { content: "Speed(Air)" }
+    td:nth-of-type(4):before { content: "Speed(Anti-Gravity)" }
+    td:nth-of-type(5):before { content: "Acceleration" }
+    td:nth-of-type(6):before { content: "Weight" }
+    td:nth-of-type(7):before { content: "Handling(Ground)" }
+    td:nth-of-type(8):before { content: "Handling(Water)" }
+    td:nth-of-type(9):before { content: "Handling(Air)" }
+    td:nth-of-type(10):before { content: "Handling(Anti-Gravity)" }
+    td:nth-of-type(11):before { content: "Traction" }
+    td:nth-of-type(12):before { content: "Mini-Turbo" }
+    table, tr, td { float: left; display: block; width: 100% }
+    th { display: none }
+    td:before { clear: left; float: left; display: block; width: 45% }
+    img { width: inherit !important; height: inherit !important }
+}

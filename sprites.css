@@ -1,0 +1,107 @@
+.mk8300slroadsterbody, .mk8azurerollertires, .mk8badwagonbody, .mk8biddybuggybody, .mk8bluestandardtires, 
+.mk8buttontires, .mk8catcruiserbody, .mk8circuitspecialbody, .mk8cometbody, .mk8crimsonslimtires, 
+.mk8cushiontires, .mk8cyberslicktires, .mk8flameriderbody, .mk8glabody, .mk8glatirestires, 
+.mk8goldstandardbody, .mk8goldtirestires, .mk8hotmonstertires, .mk8jetbikebody, .mk8landshipbody, 
+.mk8mach8body, .mk8metaltires, .mk8monstertires, .mk8mrscootybody, .mk8off-roadtires, 
+.mk8pipeframebody, .mk8prancerbody, .mk8retrooff-roadtires, .mk8rollertires, .mk8slicktires, 
+.mk8slimtires, .mk8sneekerbody, .mk8spongetires, .mk8sportbikebody, .mk8sportscoupebody, 
+.mk8standardatvbody, .mk8standardbikebody, .mk8standardkartbody, .mk8standardtires, .mk8steeldriverbody, 
+.mk8tanookikartbody, .mk8teddybuggybody, .mk8thedukebody, .mk8tri-speederbody, .mk8varmintbody, 
+.mk8w25silverarrowbody, .mk8wildwigglerbody, .mk8woodtires, .mk8yoshibikebody, .mk8bluefalconbody, 
+.mk8triforcetirestires, .mk8mastercyclebody, .mk8bdasherbody, .mk8tanookimario, .mk8babydaisy, 
+.mk8babyluigi, .mk8babymario, .mk8babypeach, .mk8babyrosalina, .mk8bowser, 
+.mk8daisy, .mk8donkeykong, .mk8heavymii, .mk8iggy, .mk8koopa, 
+.mk8lakitu, .mk8larry, .mk8lemmy, .mk8ludwig, .mk8luigi, 
+.mk8mario, .mk8mediummii, .mk8metalmario, .mk8morton, .mk8peach, 
+.mk8pinkgoldpeach, .mk8rosalina, .mk8roy, .mk8shyguy, .mk8smallmii, 
+.mk8toad, .mk8toadette, .mk8waluigi, .mk8wario, .mk8wendy, 
+.mk8yoshi, .mk8catpeach
+{ display: inline-block; background: url('img/sprites.png') no-repeat; overflow: hidden; text-indent: -9999px; text-align: left; }
+ 
+.mk8300slroadsterbody { background-position: -2px -0px; width: 100px; height: 64px; }
+.mk8azurerollertires { background-position: -2px -66px; width: 100px; height: 64px; }
+.mk8badwagonbody { background-position: -2px -132px; width: 100px; height: 64px; }
+.mk8biddybuggybody { background-position: -2px -198px; width: 100px; height: 64px; }
+.mk8bluestandardtires { background-position: -2px -264px; width: 100px; height: 64px; }
+.mk8buttontires { background-position: -2px -330px; width: 100px; height: 64px; }
+.mk8catcruiserbody { background-position: -2px -396px; width: 100px; height: 64px; }
+.mk8circuitspecialbody { background-position: -2px -462px; width: 100px; height: 64px; }
+.mk8cometbody { background-position: -2px -528px; width: 100px; height: 64px; }
+.mk8crimsonslimtires { background-position: -2px -594px; width: 100px; height: 64px; }
+.mk8cushiontires { background-position: -2px -660px; width: 100px; height: 64px; }
+.mk8cyberslicktires { background-position: -2px -726px; width: 100px; height: 64px; }
+.mk8flameriderbody { background-position: -2px -792px; width: 100px; height: 64px; }
+.mk8glabody { background-position: -2px -858px; width: 100px; height: 64px; }
+.mk8glatirestires { background-position: -2px -924px; width: 100px; height: 64px; }
+.mk8goldstandardbody { background-position: -2px -990px; width: 100px; height: 64px; }
+.mk8goldtirestires { background-position: -2px -1056px; width: 100px; height: 64px; }
+.mk8hotmonstertires { background-position: -2px -1122px; width: 100px; height: 64px; }
+.mk8jetbikebody { background-position: -2px -1188px; width: 100px; height: 64px; }
+.mk8landshipbody { background-position: -2px -1254px; width: 100px; height: 64px; }
+.mk8mach8body { background-position: -2px -1320px; width: 100px; height: 64px; }
+.mk8metaltires { background-position: -2px -1386px; width: 100px; height: 64px; }
+.mk8monstertires { background-position: -2px -1452px; width: 100px; height: 64px; }
+.mk8mrscootybody { background-position: -2px -1518px; width: 100px; height: 64px; }
+.mk8off-roadtires { background-position: -2px -1584px; width: 100px; height: 64px; }
+.mk8pipeframebody { background-position: -2px -1650px; width: 100px; height: 64px; }
+.mk8prancerbody { background-position: -2px -1716px; width: 100px; height: 64px; }
+.mk8retrooff-roadtires { background-position: -2px -1782px; width: 100px; height: 64px; }
+.mk8rollertires { background-position: -2px -1848px; width: 100px; height: 64px; }
+.mk8slicktires { background-position: -2px -1914px; width: 100px; height: 64px; }
+.mk8slimtires { background-position: -2px -1980px; width: 100px; height: 64px; }
+.mk8sneekerbody { background-position: -2px -2046px; width: 100px; height: 64px; }
+.mk8spongetires { background-position: -2px -2112px; width: 100px; height: 64px; }
+.mk8sportbikebody { background-position: -2px -2178px; width: 100px; height: 64px; }
+.mk8sportscoupebody { background-position: -2px -2244px; width: 100px; height: 64px; }
+.mk8standardatvbody { background-position: -2px -2310px; width: 100px; height: 64px; }
+.mk8standardbikebody { background-position: -2px -2376px; width: 100px; height: 64px; }
+.mk8standardkartbody { background-position: -2px -2442px; width: 100px; height: 64px; }
+.mk8standardtires { background-position: -2px -2508px; width: 100px; height: 64px; }
+.mk8steeldriverbody { background-position: -2px -2574px; width: 100px; height: 64px; }
+.mk8tanookikartbody { background-position: -2px -2640px; width: 100px; height: 62px; }
+.mk8teddybuggybody { background-position: -2px -2704px; width: 100px; height: 64px; }
+.mk8thedukebody { background-position: -2px -2770px; width: 100px; height: 64px; }
+.mk8tri-speederbody { background-position: -2px -2836px; width: 100px; height: 64px; }
+.mk8varmintbody { background-position: -2px -2902px; width: 100px; height: 64px; }
+.mk8w25silverarrowbody { background-position: -2px -2968px; width: 100px; height: 64px; }
+.mk8wildwigglerbody { background-position: -2px -3034px; width: 100px; height: 64px; }
+.mk8woodtires { background-position: -2px -3100px; width: 100px; height: 64px; }
+.mk8yoshibikebody { background-position: -2px -3166px; width: 100px; height: 64px; }
+.mk8bluefalconbody { background-position: -2px -3232px; width: 97px; height: 64px; }
+.mk8triforcetirestires { background-position: -2px -3298px; width: 96px; height: 64px; }
+.mk8mastercyclebody { background-position: -2px -3364px; width: 95px; height: 64px; }
+.mk8bdasherbody { background-position: -2px -3430px; width: 85px; height: 64px; }
+.mk8tanookimario { background-position: -2px -3496px; width: 65px; height: 67px; }
+.mk8babydaisy { background-position: -2px -3565px; width: 64px; height: 64px; }
+.mk8babyluigi { background-position: -2px -3631px; width: 64px; height: 64px; }
+.mk8babymario { background-position: -2px -3697px; width: 64px; height: 64px; }
+.mk8babypeach { background-position: -2px -3763px; width: 64px; height: 64px; }
+.mk8babyrosalina { background-position: -2px -3829px; width: 64px; height: 64px; }
+.mk8bowser { background-position: -2px -3895px; width: 64px; height: 64px; }
+.mk8daisy { background-position: -2px -3961px; width: 64px; height: 64px; }
+.mk8donkeykong { background-position: -2px -4027px; width: 64px; height: 64px; }
+.mk8heavymii { background-position: -2px -4093px; width: 64px; height: 64px; }
+.mk8iggy { background-position: -2px -4159px; width: 64px; height: 64px; }
+.mk8koopa { background-position: -2px -4225px; width: 64px; height: 64px; }
+.mk8lakitu { background-position: -2px -4291px; width: 64px; height: 64px; }
+.mk8larry { background-position: -2px -4357px; width: 64px; height: 64px; }
+.mk8lemmy { background-position: -2px -4423px; width: 64px; height: 64px; }
+.mk8ludwig { background-position: -2px -4489px; width: 64px; height: 64px; }
+.mk8luigi { background-position: -2px -4555px; width: 64px; height: 64px; }
+.mk8mario { background-position: -2px -4621px; width: 64px; height: 64px; }
+.mk8mediummii { background-position: -2px -4687px; width: 64px; height: 64px; }
+.mk8metalmario { background-position: -2px -4753px; width: 64px; height: 64px; }
+.mk8morton { background-position: -2px -4819px; width: 64px; height: 64px; }
+.mk8peach { background-position: -2px -4885px; width: 64px; height: 64px; }
+.mk8pinkgoldpeach { background-position: -2px -4951px; width: 64px; height: 64px; }
+.mk8rosalina { background-position: -2px -5017px; width: 64px; height: 64px; }
+.mk8roy { background-position: -2px -5083px; width: 64px; height: 64px; }
+.mk8shyguy { background-position: -2px -5149px; width: 64px; height: 64px; }
+.mk8smallmii { background-position: -2px -5215px; width: 64px; height: 64px; }
+.mk8toad { background-position: -2px -5281px; width: 64px; height: 64px; }
+.mk8toadette { background-position: -2px -5347px; width: 64px; height: 64px; }
+.mk8waluigi { background-position: -2px -5413px; width: 64px; height: 64px; }
+.mk8wario { background-position: -2px -5479px; width: 64px; height: 64px; }
+.mk8wendy { background-position: -2px -5545px; width: 64px; height: 64px; }
+.mk8yoshi { background-position: -2px -5611px; width: 64px; height: 64px; }
+.mk8catpeach { background-position: -2px -5677px; width: 58px; height: 67px; }
