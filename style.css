@@ -22,11 +22,10 @@ td, th { width: 8% }
 hr { display: block; clear: both; margin: 1em 0; color: #ddd; }
 .hide { display: none }
 #filter-search { width: 100%; margin-top: 1em; }
-.chart { height: 192px; width: 30%; float: right }
 .bar { background-color: red; height: 17%; margin: 1px 0px }
 .sub-bar { height: 4%; margin-bottom: 0px }
 .sub-bar + .sub-bar { margin-top: 0px }
-.chart { background-size: 16.66666%; background-image: linear-gradient(90deg, #aaa 1px, transparent 1px) }
+.chart { height: 192px; width: 30%; float: right; background-size: 16.66666%; background-image: linear-gradient(90deg, #aaa 1px, transparent 1px) }
 .speed-bar, #s-button:before { background-color: red }
 .acceleration-bar, #a-button:before { background-color: rgb(255, 214, 3) }
 .weight-bar, #w-button:before { background-color: rgb(42, 186, 71) }
@@ -64,4 +63,6 @@ tbody { margin-top: 1em }
     th { display: none }
     td:before { clear: left; float: left; display: block; width: 45% }
     img { width: inherit !important; height: inherit !important }
+    .chart { width: 100%; float:left; }
+    .opts { width: 100%; }
 }
