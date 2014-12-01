@@ -47,18 +47,18 @@ tbody { margin-top: 1em }
     form label { width: 100% }
 }
 @media (max-width:700px) {
-    td:nth-of-type(1):before { content: "Speed(Ground)" }
-    td:nth-of-type(2):before { content: "Speed(Water)" }
-    td:nth-of-type(3):before { content: "Speed(Air)" }
-    td:nth-of-type(4):before { content: "Speed(Anti-Gravity)" }
-    td:nth-of-type(5):before { content: "Acceleration" }
-    td:nth-of-type(6):before { content: "Weight" }
-    td:nth-of-type(7):before { content: "Handling(Ground)" }
-    td:nth-of-type(8):before { content: "Handling(Water)" }
-    td:nth-of-type(9):before { content: "Handling(Air)" }
-    td:nth-of-type(10):before { content: "Handling(Anti-Gravity)" }
-    td:nth-of-type(11):before { content: "Traction" }
-    td:nth-of-type(12):before { content: "Mini-Turbo" }
+    td:nth-of-type(1):before  { width: 70%; content: "Speed(Ground)" }
+    td:nth-of-type(2):before  { width: 70%; content: "Speed(Water)" }
+    td:nth-of-type(3):before  { width: 70%; content: "Speed(Air)" }
+    td:nth-of-type(4):before  { width: 70%; content: "Speed(Anti-Gravity)" }
+    td:nth-of-type(5):before  { width: 70%; content: "Acceleration" }
+    td:nth-of-type(6):before  { width: 70%; content: "Weight" }
+    td:nth-of-type(7):before  { width: 70%; content: "Handling(Ground)" }
+    td:nth-of-type(8):before  { width: 70%; content: "Handling(Water)" }
+    td:nth-of-type(9):before  { width: 70%; content: "Handling(Air)" }
+    td:nth-of-type(10):before { width: 70%; content: "Handling(Anti-Gravity)" }
+    td:nth-of-type(11):before { width: 70%; content: "Traction" }
+    td:nth-of-type(12):before { width: 70%; content: "Mini-Turbo" }
     table, tr, td { float: left; display: block; width: 100% }
     th { display: none }
     td:before { clear: left; float: left; display: block; width: 45% }
