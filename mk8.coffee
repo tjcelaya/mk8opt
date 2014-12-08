@@ -2,7 +2,7 @@
 
 L = (things...) -> console.log.apply console, things
 
-boxen = document.querySelectorAll 'form input'
+boxen = document.querySelectorAll 'form input[type="checkbox"]'
 halptaxt = document.querySelector '.halptaxt'
 filter_search = document.querySelector '#filter-search'
 
@@ -10,6 +10,7 @@ DISPLAY_AMOUNT = 5
 
 search_string = null
 results_collected = 0
+sort_stack = []
 
 TEMPLATIZE =  (d, i) ->
   char_images = []
@@ -103,6 +104,37 @@ TEMPLATIZE =  (d, i) ->
     <br class='clear'/>
   """
 
+# var debounce = null,
+#     iframeEl = document.querySelectorAll('#vid iframe');
+    
+    
+# if (iframeEl.length != 0) {
+#   iframeEl = iframeEl[0];
+  
+#   console.log(iframeEl.getAttribute('width'))
+#   console.log(iframeEl.getAttribute('height'))
+  
+#   iframeEl.setAttribute('data-aspect-ratio', iframeEl.getAttribute('width') / iframeEl.getAttribute('height'))
+  
+#   console.log(iframeEl.getAttribute('data-aspect-ratio'))
+  
+  
+# }
+
+# window.onresize = function(){
+#   if (debounce != null)
+#     clearTimeout(debounce);
+    
+#   debounce = setTimeout(function(){
+#     var ifEl = document.querySelectorAll('#vid iframe');
+#     if (iframeEl.length != 0) {
+#       ifEl = ifEl[0];
+#       ifEl.setAttribute('width', document.body.clientWidth)
+#       ifEl.setAttribute('height', document.body.clientWidth / ifEl.getAttribute('data-aspect-ratio'))
+#     }
+#   }, 500);
+# };
+
 # unique IDs automatically become properties of the window object, T.I.L.!
 
 document.querySelector '.halp'
@@ -145,67 +177,137 @@ score = (combo, keys) ->
 
   (sum ** 2) / (1 + deviation ** 2)
 
-d3.json 'combined.json', (err, json_data) -> 
+d3.json 'averaged.json', (err, json_data) ->
   if err
-    throw new Error 'Error getting data'
+    console.error err
+    throw new Error 'Error getting averaged'
 
-  rows = d3.select('#listing')
-    .selectAll('div')
-    .data(d3.entries json_data)
+  window.json = json_data
+  Vs = json_data.Vehicles
+  Cs = json_data.Characters
+  Ws = json_data.Wheels
+
+  PADDING = 50
+  RANGE   = [ PADDING,     600-PADDING ]
+
+  xScale = d3.scale.linear()
+    .domain     [ 0, 6 ]
+    .rangeRound RANGE
+    .clamp true
+
+  yScale = d3.scale.linear()
+    # .domain     [ 0, Object.keys(Cs).length-1 ]
+    .domain     [ 6, 0 ]
+    .rangeRound RANGE
+    .clamp true
+
+  graph = d3.select '#graph'
+
+
+  xAxis = d3.svg.axis()
+    .scale xScale
+    .orient 'bottom'
+    .tickSize RANGE[1]-PADDING/2
+    .tickFormat d3.format '.0'
+    .ticks 7
+
+  yAxis = d3.svg.axis()
+    .scale yScale
+    .orient 'left'
+    .tickSize RANGE[1]-PADDING/2
+    .tickFormat d3.format '.0'
+    .ticks 7
+
+  graph.append 'g'
+    .attr 'id', 'xAxis'
+    .attr 'transform', "translate(0,#{PADDING-20})"
+    .call xAxis
+
+  graph.append 'g'
+    .attr 'id', 'yAxis'
+    .attr 'transform', "translate(#{RANGE[1]+20},0)"
+    .call yAxis
+
+  character_points = graph.selectAll 'circle'
+    .data d3.entries Cs
     .enter()
-    .append('div')
-    .html TEMPLATIZE
+    .append 'circle'
+    .attr 'cx', 0
+    .attr 'cy', (d,i) -> yScale i
+    .attr 'r', 3
 
-  rows
-    .classed('row', true)
-    # TODO: change this to a delegate
-    .each (d, i) ->
-      @addEventListener 'click', (e) ->
-        if 'true' == @dataset.toggle
-          @dataset.toggle = 'false'
-          @querySelector('.details').classList.add 'hide'
-        else
-          @dataset.toggle = 'true'
-          @querySelector('.details').classList.remove 'hide'
-      
-      @classList.add 'hide'
-
-  FILTER_RESULTS = (d, i) ->
-    if search_string is null
-      i > DISPLAY_AMOUNT
+  d3.selectAll('form input[type="checkbox"]').on 'click.graph', (c) ->
+    if @checked
+      sort_stack.push @name 
     else
-      if search_string.test "".concat.apply [].concat.apply [], d.value.Options
-        results_collected++ > DISPLAY_AMOUNT
-      else
-        true
+      for stat, idx in sort_stack when stat is @name
+        sort_stack.splice idx, 1
 
-    
+    character_points.transition()
+      .attr 'cx', (d, i, el) -> 
+        if 0 < sort_stack.length then xScale d.value[sort_stack[0]] else 0
+      .attr 'cy', (d, i, el) ->
+        if 1 < sort_stack.length then yScale d.value[sort_stack[1]] else yScale i
+      .attr 'r',  (d, i, el) -> 3
+      .attr 'stroke-width', '5px'
 
-  d3.select('#filter-search').on 'input', ->
-    if filter_search.value.length < 2
-      return search_string = null
 
-    search_string = new RegExp filter_search.value, 'i'
-    rows.classed 'hide', FILTER_RESULTS
-    results_collected = 0
 
-  d3.selectAll('form input[type="checkbox"]').on 'click', (c) ->
+# d3.json 'combined.json', (err, json_data) -> 
+#   if err
+#     throw new Error 'Error getting data'
 
-    sorting_by = []
+#   rows = d3.select('#listing')
+#     .selectAll('div')
+#     .data(d3.entries json_data)
+#     .enter()
+#     .append('div')
+#     .html TEMPLATIZE
 
-    for b in boxen when b.checked is true
-      switch b.name
-        when 's' then sorting_by.push "Speed"
-        when 'a' then sorting_by.push "Acceleration"
-        when 'w' then sorting_by.push "Weight"
-        when 'h' then sorting_by.push "Handling"
-        when 't' then sorting_by.push "Traction"
-        when 'm' then sorting_by.push "Mini-Turbo"
+#   rows
+#     .classed('row', true)
+#     # TODO: change this to a delegate
+#     .each (d, i) ->
+#       @addEventListener 'click', (e) ->
+#         if 'true' == @dataset.toggle
+#           @dataset.toggle = 'false'
+#           @querySelector('.details').classList.add 'hide'
+#         else
+#           @dataset.toggle = 'true'
+#           @querySelector('.details').classList.remove 'hide'
+      
+#       @classList.add 'hide'
 
-    return if sorting_by.length == 0
+#   FILTER_RESULTS = (d, i) ->
+#     if search_string is null
+#       i > DISPLAY_AMOUNT
+#     else
+#       if search_string.test "".concat.apply [].concat.apply [], d.value.Options
+#         results_collected++ > DISPLAY_AMOUNT
+#       else
+#         true
 
-    rows
-    .sort (a, b) ->
-      score(b.value, sorting_by) - score(a.value, sorting_by)
-    .classed 'hide', FILTER_RESULTS
-    results_collected = 0
+#   d3.select('#filter-search').on 'input', ->
+#     if filter_search.value.length < 2
+#       return search_string = null
+
+#     search_string = new RegExp filter_search.value, 'i'
+#     rows.classed 'hide', FILTER_RESULTS
+#     results_collected = 0
+
+#   d3.selectAll('form input[type="checkbox"]').on 'click.sort', (c) ->
+
+#     L 'butts'
+
+#     sorting_by = []
+
+#     for b in boxen when b.checked is true
+#       sorting_by.push @name
+
+#     return if sorting_by.length == 0
+
+#     rows
+#     .sort (a, b) ->
+#       score(b.value, sorting_by) - score(a.value, sorting_by)
+#     .classed 'hide', FILTER_RESULTS
+#     results_collected = 0

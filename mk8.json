@@ -1,299 +1,255 @@
 {
   "Vehicles": {
-    "Karts": {
-      "Standard": {
-        "Speed": {
-          "Ground": 0,
-          "Water": 0,
-          "Air": 0,
-          "Anti-Gravity": 0
-        },
-        "Acceleration": 0,
-        "Weight": 0,
-        "Handling": {
-          "Ground": 0,
-          "Water": 0,
-          "Air": 0,
-          "Anti-Gravity": 0
-        },
-        "Traction": 0,
-        "Mini-Turbo": 0,
-        "Options": [
-          "Standard Kart",
-          "Cat Cruiser",
-          "Prancer",
-          "Sneeker",
-          "Teddy Buggy",
-          "300 SL Roadster"
-        ]
-      },
-      "Light": {
-        "Speed": {
-          "Ground": 0,
-          "Water": 0.25,
-          "Air": 0.25,
-          "Anti-Gravity": -0.25
-        },
-        "Acceleration": 0.25,
-        "Weight": -0.25,
-        "Handling": {
-          "Ground": 0.5,
-          "Water": 0.5,
-          "Air": 0.5,
-          "Anti-Gravity": 0.25
-        },
-        "Traction": -0.5,
-        "Mini-Turbo": 0.25,
-        "Options": [
-          "Pipe Frame",
-          "Wild Wiggler",
-          "W 25 Silver Arrow"
-        ]
-      },
-      "Very Light": {
-        "Speed": {
-          "Ground": -0.75,
-          "Water": 0.5,
-          "Air": 0.5,
-          "Anti-Gravity": -1
-        },
-        "Acceleration": 1.25,
-        "Weight": -0.5,
-        "Handling": {
-          "Ground": 0.5,
-          "Water": 0.75,
-          "Air": 0.75,
-          "Anti-Gravity": 0
-        },
-        "Traction": -0.25,
-        "Mini-Turbo": 1,
-        "Options": [
-          "Biddybuggy",
-          "Landship"
-        ]
-      },
-      "Speed": {
-        "Speed": {
-          "Ground": 0.5,
-          "Water": 0.25,
-          "Air": 0.5,
-          "Anti-Gravity": 0.25
-        },
-        "Acceleration": -0.25,
-        "Weight": 0.25,
-        "Handling": {
-          "Ground": 0,
-          "Water": 0,
-          "Air": 0,
-          "Anti-Gravity": -0.25
-        },
-        "Traction": -1,
-        "Mini-Turbo": -0.5,
-        "Options": [
-          "Mach 8",
-          "Circuit Special",
-          "Sports Coupe",
-          "Gold Standard",
-          "B Dasher"
-        ]
-      },
-      "Offroad": {
-        "Speed": {
-          "Ground": 0,
-          "Water": 0.5,
-          "Air": 0,
-          "Anti-Gravity": -0.25
-        },
-        "Acceleration": -0.5,
-        "Weight": 0.5,
-        "Handling": {
-          "Ground": -0.5,
-          "Water": 0.75,
-          "Air": -0.25,
-          "Anti-Gravity": -0.75
-        },
-        "Traction": 0.5,
-        "Mini-Turbo": -0.75,
-        "Options": [
-          "Steel Driver",
-          "Tri-Speeder",
-          "Badwagon",
-          "Standard ATV",
-          "GLA"
-        ]
-      },
-      "Blue Falcon": {
-        "Speed": {
-          "Ground": 0.25,
-          "Water": 0,
-          "Air": 0,
-          "Anti-Gravity": 0
-        },
-        "Acceleration": 0.25,
-        "Weight": -0.25,
-        "Handling": {
-          "Ground": 0,
-          "Water": 0,
-          "Air": 0,
-          "Anti-Gravity": 0
-        },
-        "Traction": -0.5,
-        "Mini-Turbo": 0,
-        "Options": [
-          "Blue Falcon"
-        ]
-      },
-      "Tanooki Kart": {
-        "Speed": {
-          "Ground": 0.25,
-          "Water": 0,
-          "Air": 0,
-          "Anti-Gravity": 0
-        },
-        "Acceleration": 0.25,
-        "Weight": -0.25,
-        "Handling": {
-          "Ground": 0,
-          "Water": 0,
-          "Air": 0,
-          "Anti-Gravity": 0
-        },
-        "Traction": -0.5,
-        "Mini-Turbo": 0,
-        "Options": [
-          "Tanooki Kart"
-        ]
-      }
+    "Standard Kart": {
+      "Type" : "Kart",
+      "Speed - Ground": 0,
+      "Speed - Water": 0,
+      "Speed - Air": 0,
+      "Speed - Anti-Gravity": 0,
+      "Acceleration": 0,
+      "Weight": 0,
+      "Handling - Ground": 0,
+      "Handling - Water": 0,
+      "Handling - Air": 0,
+      "Handling - Anti-Gravity": 0,
+      "Traction": 0,
+      "Mini-Turbo": 0,
+      "Options": [
+        "Standard Kart",
+        "Cat Cruiser",
+        "Prancer",
+        "Sneeker",
+        "Teddy Buggy",
+        "300 SL Roadster"
+      ]
     },
-    "Bikes": {
-      "Standard": {
-        "Speed": {
-          "Ground": 0,
-          "Water": 0,
-          "Air": 0,
-          "Anti-Gravity": 0
-        },
-        "Acceleration": 0,
-        "Weight": 0,
-        "Handling": {
-          "Ground": 0,
-          "Water": 0,
-          "Air": 0,
-          "Anti-Gravity": 0
-        },
-        "Traction": 0,
-        "Mini-Turbo": 0,
-        "Options": [
-          "The Duke"
-        ]
-      },
-      "Light": {
-        "Speed": {
-          "Ground": 0,
-          "Water": 0.25,
-          "Air": 0.25,
-          "Anti-Gravity": -0.25
-        },
-        "Acceleration": 0.25,
-        "Weight": -0.25,
-        "Handling": {
-          "Ground": 0.5,
-          "Water": 0.5,
-          "Air": 0.5,
-          "Anti-Gravity": 0.25
-        },
-        "Traction": -0.5,
-        "Mini-Turbo": 0.25,
-        "Options": [
-          "Standard Bike",
-          "Flame Rider",
-          "Varmint"
-        ]
-      },
-      "VeryLight": {
-        "Speed": {
-          "Ground": -0.75,
-          "Water": 0.5,
-          "Air": 0.5,
-          "Anti-Gravity": -1
-        },
-        "Acceleration": 1.25,
-        "Weight": -0.5,
-        "Handling": {
-          "Ground": 0.5,
-          "Water": 0.75,
-          "Air": 0.75,
-          "Anti-Gravity": 0
-        },
-        "Traction": -0.25,
-        "Mini-Turbo": 1,
-        "Options": [
-          "Mr. Scooty"
-        ]
-      },
-      "InsideDrift": {
-        "Speed": {
-          "Ground": 0,
-          "Water": 0,
-          "Air": 0,
-          "Anti-Gravity": -0.25
-        },
-        "Acceleration": 0.75,
-        "Weight": -0.25,
-        "Handling": {
-          "Ground": 0.75,
-          "Water": 0.75,
-          "Air": 0.75,
-          "Anti-Gravity": 0.5
-        },
-        "Traction": -1.25,
-        "Mini-Turbo": 0.5,
-        "Options": [
-          "Comet",
-          "Sport Bike",
-          "Jet Bike",
-          "Yoshi Bike"
-        ]
-      },
-      "MasterCycle": {
-        "Speed": {
-          "Ground": 0.25,
-          "Water": 0,
-          "Air": 0,
-          "Anti-Gravity": 0
-        },
-        "Acceleration": 0,
-        "Weight": 0,
-        "Handling": {
-          "Ground": 0.5,
-          "Water": 0,
-          "Air": 0,
-          "Anti-Gravity": 0
-        },
-        "Traction": -0.75,
-        "Mini-Turbo": 0,
-        "Options": [
-          "Master Cycle"
-        ]
-      }
+    "Light Kart": {
+      "Type" : "Kart",
+      "Speed - Ground": 0,
+      "Speed - Water": 0.25,
+      "Speed - Air": 0.25,
+      "Speed - Anti-Gravity": -0.25,
+      "Acceleration": 0.25,
+      "Weight": -0.25,
+      "Handling - Ground": 0.5,
+      "Handling - Water": 0.5,
+      "Handling - Air": 0.5,
+      "Handling - Anti-Gravity": 0.25,
+      "Traction": -0.5,
+      "Mini-Turbo": 0.25,
+      "Options": [
+        "Pipe Frame",
+        "Wild Wiggler",
+        "W 25 Silver Arrow"
+      ]
+    },
+    "Very Light Kart": {
+      "Type" : "Kart",
+      "Speed - Ground": -0.75,
+      "Speed - Water": 0.5,
+      "Speed - Air": 0.5,
+      "Speed - Anti-Gravity": -1,
+      "Acceleration": 1.25,
+      "Weight": -0.5,
+      "Handling - Ground": 0.5,
+      "Handling - Water": 0.75,
+      "Handling - Air": 0.75,
+      "Handling - Anti-Gravity": 0,
+      "Traction": -0.25,
+      "Mini-Turbo": 1,
+      "Options": [
+        "Biddybuggy",
+        "Landship"
+      ]
+    },
+    "Speed Kart": {
+      "Type" : "Kart",
+      "Speed - Ground": 0.5,
+      "Speed - Water": 0.25,
+      "Speed - Air": 0.5,
+      "Speed - Anti-Gravity": 0.25,
+      "Acceleration": -0.25,
+      "Weight": 0.25,
+      "Handling - Ground": 0,
+      "Handling - Water": 0,
+      "Handling - Air": 0,
+      "Handling - Anti-Gravity": -0.25,
+      "Traction": -1,
+      "Mini-Turbo": -0.5,
+      "Options": [
+        "Mach 8",
+        "Circuit Special",
+        "Sports Coupe",
+        "Gold Standard",
+        "B Dasher"
+      ]
+    },
+    "Offroad Kart": {
+      "Type" : "Kart",
+      "Speed - Ground": 0,
+      "Speed - Water": 0.5,
+      "Speed - Air": 0,
+      "Speed - Anti-Gravity": -0.25,
+      "Acceleration": -0.5,
+      "Weight": 0.5,
+      "Handling - Ground": -0.5,
+      "Handling - Water": 0.75,
+      "Handling - Air": -0.25,
+      "Handling - Anti-Gravity": -0.75,
+      "Traction": 0.5,
+      "Mini-Turbo": -0.75,
+      "Options": [
+        "Steel Driver",
+        "Tri-Speeder",
+        "Badwagon",
+        "Standard ATV",
+        "GLA"
+      ]
+    },
+    "Blue Falcon": {
+      "Type" : "Kart",
+      "Speed - Ground": 0.25,
+      "Speed - Water": 0,
+      "Speed - Air": 0,
+      "Speed - Anti-Gravity": 0,
+      "Acceleration": 0.25,
+      "Weight": -0.25,
+      "Handling - Ground": 0,
+      "Handling - Water": 0,
+      "Handling - Air": 0,
+      "Handling - Anti-Gravity": 0,
+      "Traction": -0.5,
+      "Mini-Turbo": 0,
+      "Options": [
+        "Blue Falcon"
+      ]
+    },
+    "Tanooki Kart": {
+      "Type" : "Kart",
+      "Speed - Ground": 0.25,
+      "Speed - Water": 0,
+      "Speed - Air": 0,
+      "Speed - Anti-Gravity": 0,
+      "Acceleration": 0.25,
+      "Weight": -0.25,
+      "Handling - Ground": 0,
+      "Handling - Water": 0,
+      "Handling - Air": 0,
+      "Handling - Anti-Gravity": 0,
+      "Traction": -0.5,
+      "Mini-Turbo": 0,
+      "Options": [
+        "Tanooki Kart"
+      ]
+    },
+    "Standard Bike": {
+      "Type": "Bike",
+      "Speed - Ground": 0,
+      "Speed - Water": 0,
+      "Speed - Air": 0,
+      "Speed - Anti-Gravity": 0,
+      "Acceleration": 0,
+      "Weight": 0,
+      "Handling - Ground": 0,
+      "Handling - Water": 0,
+      "Handling - Air": 0,
+      "Handling - Anti-Gravity": 0,
+      "Traction": 0,
+      "Mini-Turbo": 0,
+      "Options": [
+        "The Duke"
+      ]
+    },
+    "Light Bike": {
+      "Type": "Bike",
+      "Speed - Ground": 0,
+      "Speed - Water": 0.25,
+      "Speed - Air": 0.25,
+      "Speed - Anti-Gravity": -0.25,
+      "Acceleration": 0.25,
+      "Weight": -0.25,
+      "Handling - Ground": 0.5,
+      "Handling - Water": 0.5,
+      "Handling - Air": 0.5,
+      "Handling - Anti-Gravity": 0.25,
+      "Traction": -0.5,
+      "Mini-Turbo": 0.25,
+      "Options": [
+        "Standard Bike",
+        "Flame Rider",
+        "Varmint"
+      ]
+    },
+    "Very Light Bike": {
+      "Type": "Bike",
+      "Speed - Ground": -0.75,
+      "Speed - Water": 0.5,
+      "Speed - Air": 0.5,
+      "Speed - Anti-Gravity": -1,
+      "Acceleration": 1.25,
+      "Weight": -0.5,
+      "Handling - Ground": 0.5,
+      "Handling - Water": 0.75,
+      "Handling - Air": 0.75,
+      "Handling - Anti-Gravity": 0,
+      "Traction": -0.25,
+      "Mini-Turbo": 1,
+      "Options": [
+        "Mr. Scooty"
+      ]
+    },
+    "Inside Drift Bike": {
+      "Type": "Bike",
+      "Speed - Ground": 0,
+      "Speed - Water": 0,
+      "Speed - Air": 0,
+      "Speed - Anti-Gravity": -0.25,
+      "Acceleration": 0.75,
+      "Weight": -0.25,
+      "Handling - Ground": 0.75,
+      "Handling - Water": 0.75,
+      "Handling - Air": 0.75,
+      "Handling - Anti-Gravity": 0.5,
+      "Traction": -1.25,
+      "Mini-Turbo": 0.5,
+      "Options": [
+        "Comet",
+        "Sport Bike",
+        "Jet Bike",
+        "Yoshi Bike"
+      ]
+    },
+    "MasterCycle Bike": {
+      "Type": "Bike",
+      "Speed - Ground": 0.25,
+      "Speed - Water": 0,
+      "Speed - Air": 0,
+      "Speed - Anti-Gravity": 0,
+      "Acceleration": 0,
+      "Weight": 0,
+      "Handling - Ground": 0.5,
+      "Handling - Water": 0,
+      "Handling - Air": 0,
+      "Handling - Anti-Gravity": 0,
+      "Traction": -0.75,
+      "Mini-Turbo": 0,
+      "Options": [
+        "Master Cycle"
+      ]
     }
   },
   "Characters": {
     "Light1": {
-      "Speed": {
-        "Ground": 2.25,
-        "Water": 2.75,
-        "Air": 2.25,
-        "Anti-Gravity": 2.5
-      },
+      "Speed - Ground": 2.25,
+      "Speed - Water": 2.75,
+      "Speed - Air": 2.25,
+      "Speed - Anti-Gravity": 2.5,
       "Acceleration": 3.25,
       "Weight": 2.25,
-      "Handling": {
-        "Ground": 4.75,
-        "Water": 4.75,
-        "Air": 4.5,
-        "Anti-Gravity": 5
-      },
+      "Handling - Ground": 4.75,
+      "Handling - Water": 4.75,
+      "Handling - Air": 4.5,
+      "Handling - Anti-Gravity": 5,
       "Traction": 4.5,
       "Mini-Turbo": 3,
       "Options": [
@@ -307,20 +263,16 @@
       ]
     },
     "Light2": {
-      "Speed": {
-        "Ground": 2.75,
-        "Water": 3.25,
-        "Air": 2.75,
-        "Anti-Gravity": 3
-      },
+      "Speed - Ground": 2.75,
+      "Speed - Water": 3.25,
+      "Speed - Air": 2.75,
+      "Speed - Anti-Gravity": 3,
       "Acceleration": 3,
       "Weight": 2.75,
-      "Handling": {
-        "Ground": 4.25,
-        "Water": 4.25,
-        "Air": 4,
-        "Anti-Gravity": 4.5
-      },
+      "Handling - Ground": 4.25,
+      "Handling - Water": 4.25,
+      "Handling - Air": 4,
+      "Handling - Anti-Gravity": 4.5,
       "Traction": 4.25,
       "Mini-Turbo": 2.75,
       "Options": [
@@ -334,20 +286,16 @@
       ]
     },
     "MediumCatPeach": {
-      "Speed": {
-        "Ground": 3.25,
-        "Water": 3.75,
-        "Air": 3.25,
-        "Anti-Gravity": 3.5
-      },
+      "Speed - Ground": 3.25,
+      "Speed - Water": 3.75,
+      "Speed - Air": 3.25,
+      "Speed - Anti-Gravity": 3.5,
       "Acceleration": 3,
       "Weight": 3,
-      "Handling": {
-        "Ground": 3.75,
-        "Water": 3.75,
-        "Air": 3.5,
-        "Anti-Gravity": 4
-      },
+      "Handling - Ground": 3.75,
+      "Handling - Water": 3.75,
+      "Handling - Air": 3.5,
+      "Handling - Anti-Gravity": 4,
       "Traction": 4,
       "Mini-Turbo": 2.5,
       "Options": [
@@ -355,20 +303,16 @@
       ]
     },
     "Medium1": {
-      "Speed": {
-        "Ground": 3.25,
-        "Water": 3.75,
-        "Air": 3.25,
-        "Anti-Gravity": 3.5
-      },
+      "Speed - Ground": 3.25,
+      "Speed - Water": 3.75,
+      "Speed - Air": 3.25,
+      "Speed - Anti-Gravity": 3.5,
       "Acceleration": 2.75,
       "Weight": 3.25,
-      "Handling": {
-        "Ground": 3.75,
-        "Water": 3.75,
-        "Air": 3.5,
-        "Anti-Gravity": 4
-      },
+      "Handling - Ground": 3.75,
+      "Handling - Water": 3.75,
+      "Handling - Air": 3.5,
+      "Handling - Anti-Gravity": 4,
       "Traction": 4,
       "Mini-Turbo": 2.5,
       "Options": [
@@ -378,20 +322,16 @@
       ]
     },
     "MediumTanookiMario": {
-      "Speed": {
-        "Ground": 3.75,
-        "Water": 4.25,
-        "Air": 3.75,
-        "Anti-Gravity": 4
-      },
+      "Speed - Ground": 3.75,
+      "Speed - Water": 4.25,
+      "Speed - Air": 3.75,
+      "Speed - Anti-Gravity": 4,
       "Acceleration": 2.75,
       "Weight": 3.5,
-      "Handling": {
-        "Ground": 3.25,
-        "Water": 3.25,
-        "Air": 3,
-        "Anti-Gravity": 3.5
-      },
+      "Handling - Ground": 3.25,
+      "Handling - Water": 3.25,
+      "Handling - Air": 3,
+      "Handling - Anti-Gravity": 3.5,
       "Traction": 3.75,
       "Mini-Turbo": 2.25,
       "Options": [
@@ -399,20 +339,16 @@
       ]
     },
     "Medium2": {
-      "Speed": {
-        "Ground": 3.75,
-        "Water": 4.25,
-        "Air": 3.75,
-        "Anti-Gravity": 4
-      },
+      "Speed - Ground": 3.75,
+      "Speed - Water": 4.25,
+      "Speed - Air": 3.75,
+      "Speed - Anti-Gravity": 4,
       "Acceleration": 2.5,
       "Weight": 3.75,
-      "Handling": {
-        "Ground": 3.25,
-        "Water": 3.25,
-        "Air": 3,
-        "Anti-Gravity": 3.5
-      },
+      "Handling - Ground": 3.25,
+      "Handling - Water": 3.25,
+      "Handling - Air": 3,
+      "Handling - Anti-Gravity": 3.5,
       "Traction": 3.75,
       "Mini-Turbo": 2.25,
       "Options": [
@@ -424,20 +360,16 @@
       ]
     },
     "Heavy1": {
-      "Speed": {
-        "Ground": 4.25,
-        "Water": 4.75,
-        "Air": 4.25,
-        "Anti-Gravity": 4.5
-      },
+      "Speed - Ground": 4.25,
+      "Speed - Water": 4.75,
+      "Speed - Air": 4.25,
+      "Speed - Anti-Gravity": 4.5,
       "Acceleration": 2.25,
       "Weight": 4.25,
-      "Handling": {
-        "Ground": 2.75,
-        "Water": 2.75,
-        "Air": 2.5,
-        "Anti-Gravity": 3
-      },
+      "Handling - Ground": 2.75,
+      "Handling - Water": 2.75,
+      "Handling - Air": 2.5,
+      "Handling - Anti-Gravity": 3,
       "Traction": 3.5,
       "Mini-Turbo": 2,
       "Options": [
@@ -448,20 +380,16 @@
       ]
     },
     "Heavy2": {
-      "Speed": {
-        "Ground": 4.25,
-        "Water": 4.75,
-        "Air": 4.25,
-        "Anti-Gravity": 4.5
-      },
+      "Speed - Ground": 4.25,
+      "Speed - Water": 4.75,
+      "Speed - Air": 4.25,
+      "Speed - Anti-Gravity": 4.5,
       "Acceleration": 2,
       "Weight": 4.75,
-      "Handling": {
-        "Ground": 2.75,
-        "Water": 2.75,
-        "Air": 2.5,
-        "Anti-Gravity": 3
-      },
+      "Handling - Ground": 2.75,
+      "Handling - Water": 2.75,
+      "Handling - Air": 2.5,
+      "Handling - Anti-Gravity": 3,
       "Traction": 3.25,
       "Mini-Turbo": 1.75,
       "Options": [
@@ -470,20 +398,16 @@
       ]
     },
     "Heavy3": {
-      "Speed": {
-        "Ground": 4.75,
-        "Water": 5.25,
-        "Air": 4.75,
-        "Anti-Gravity": 5
-      },
+      "Speed - Ground": 4.75,
+      "Speed - Water": 5.25,
+      "Speed - Air": 4.75,
+      "Speed - Anti-Gravity": 5,
       "Acceleration": 2,
       "Weight": 4.75,
-      "Handling": {
-        "Ground": 2.25,
-        "Water": 2.25,
-        "Air": 2,
-        "Anti-Gravity": 2.5
-      },
+      "Handling - Ground": 2.25,
+      "Handling - Water": 2.25,
+      "Handling - Air": 2,
+      "Handling - Anti-Gravity": 2.5,
       "Traction": 3.25,
       "Mini-Turbo": 1.75,
       "Options": [
@@ -496,20 +420,16 @@
   },
   "Wheels": {
     "Standard": {
-        "Speed": {
-          "Ground": 0,
-          "Water": 0,
-          "Air": 0,
-          "Anti-Gravity": 0
-        },
+        "Speed - Ground": 0,
+        "Speed - Water": 0,
+        "Speed - Air": 0,
+        "Speed - Anti-Gravity": 0,
         "Acceleration": 0,
         "Weight": 0,
-        "Handling": {
-          "Ground": 0,
-          "Water": 0,
-          "Air": 0,
-          "Anti-Gravity": 0
-        },
+        "Handling - Ground": 0,
+        "Handling - Water": 0,
+        "Handling - Air": 0,
+        "Handling - Anti-Gravity": 0,
         "Traction": 0,
         "Mini-Turbo": 0,
         "Options": [
@@ -521,20 +441,16 @@
         ]
     },
     "Monster": {
-        "Speed": {
-          "Ground": 0,
-          "Water": -0.5,
-          "Air": -0.5,
-          "Anti-Gravity": 0
-        },
+        "Speed - Ground": 0,
+        "Speed - Water": -0.5,
+        "Speed - Air": -0.5,
+        "Speed - Anti-Gravity": 0,
         "Acceleration": -0.5,
         "Weight": 0.5,
-        "Handling": {
-          "Ground": -0.75,
-          "Water": -0.75,
-          "Air": -0.75,
-          "Anti-Gravity": -0.75
-        },
+        "Handling - Ground": -0.75,
+        "Handling - Water": -0.75,
+        "Handling - Air": -0.75,
+        "Handling - Anti-Gravity": -0.75,
         "Traction": 0.75,
         "Mini-Turbo": 0,
         "Options": [
@@ -543,20 +459,16 @@
         ]
     },
     "Light": {
-        "Speed": {
-          "Ground": -0.25,
-          "Water": -1,
-          "Air": 0.25,
-          "Anti-Gravity": -0.25
-        },
+        "Speed - Ground": -0.25,
+        "Speed - Water": -1,
+        "Speed - Air": 0.25,
+        "Speed - Anti-Gravity": -0.25,
         "Acceleration": 0.25,
         "Weight": -0.25,
-        "Handling": {
-          "Ground": -0.25,
-          "Water": -0.5,
-          "Air": 0,
-          "Anti-Gravity": -0.25
-        },
+        "Handling - Ground": -0.25,
+        "Handling - Water": -0.5,
+        "Handling - Air": 0,
+        "Handling - Anti-Gravity": -0.25,
         "Traction": 0.5,
         "Mini-Turbo": 0.75,
         "Options": [
@@ -566,20 +478,16 @@
         ]
     },
     "Very Light": {
-        "Speed": {
-          "Ground": -0.5,
-          "Water": 0,
-          "Air": 0.5,
-          "Anti-Gravity": -0.5
-        },
+        "Speed - Ground": -0.5,
+        "Speed - Water": 0,
+        "Speed - Air": 0.5,
+        "Speed - Anti-Gravity": -0.5,
         "Acceleration": 1,
         "Weight": -0.5,
-        "Handling": {
-          "Ground": 0.25,
-          "Water": 0.25,
-          "Air": 0.25,
-          "Anti-Gravity": 0.25
-        },
+        "Handling - Ground": 0.25,
+        "Handling - Water": 0.25,
+        "Handling - Air": 0.25,
+        "Handling - Anti-Gravity": 0.25,
         "Traction": -0.25,
         "Mini-Turbo": 1.5,
         "Options": [
@@ -589,20 +497,16 @@
         ]
     },
     "Slim": {
-        "Speed": {
-          "Ground": 0.25,
-          "Water": -0.25,
-          "Air": 0.25,
-          "Anti-Gravity": 0.25
-        },
+        "Speed - Ground": 0.25,
+        "Speed - Water": -0.25,
+        "Speed - Air": 0.25,
+        "Speed - Anti-Gravity": 0.25,
         "Acceleration": -0.25,
         "Weight": 0,
-        "Handling": {
-          "Ground": 0.25,
-          "Water": 0.25,
-          "Air": 0.25,
-          "Anti-Gravity": 0.25
-        },
+        "Handling - Ground": 0.25,
+        "Handling - Water": 0.25,
+        "Handling - Air": 0.25,
+        "Handling - Anti-Gravity": 0.25,
         "Traction": -0.5,
         "Mini-Turbo": 0.25,
         "Options": [
@@ -612,20 +516,16 @@
         ]
     },
     "Slick": {
-        "Speed": {
-          "Ground": 0.5,
-          "Water": -1,
-          "Air": 0.5,
-          "Anti-Gravity": 0.5
-        },
+        "Speed - Ground": 0.5,
+        "Speed - Water": -1,
+        "Speed - Air": 0.5,
+        "Speed - Anti-Gravity": 0.5,
         "Acceleration": -0.25,
         "Weight": 0.25,
-        "Handling": {
-          "Ground": 0,
-          "Water": 0,
-          "Air": 0,
-          "Anti-Gravity": 0
-        },
+        "Handling - Ground": 0,
+        "Handling - Water": 0,
+        "Handling - Air": 0,
+        "Handling - Anti-Gravity": 0,
         "Traction": -1,
         "Mini-Turbo": 0.25,
         "Options": [
@@ -634,20 +534,16 @@
         ]
     },
     "Metal": {
-        "Speed": {
-          "Ground": 0.25,
-          "Water": -0.25,
-          "Air": 0.25,
-          "Anti-Gravity": 0.25
-        },
+        "Speed - Ground": 0.25,
+        "Speed - Water": -0.25,
+        "Speed - Air": 0.25,
+        "Speed - Anti-Gravity": 0.25,
         "Acceleration": -0.5,
         "Weight": 0.5,
-        "Handling": {
-          "Ground": 0,
-          "Water": 0,
-          "Air": 0,
-          "Anti-Gravity": 0
-        },
+        "Handling - Ground": 0,
+        "Handling - Water": 0,
+        "Handling - Air": 0,
+        "Handling - Anti-Gravity": 0,
         "Traction": -0.5,
         "Mini-Turbo": 0,
         "Options": [
@@ -658,20 +554,16 @@
   },
   "Gliders": {
     "Standard": {
-        "Speed": {
-          "Ground": 0,
-          "Water": 0,
-          "Air": 0,
-          "Anti-Gravity": 0
-        },
+        "Speed - Ground": 0,
+        "Speed - Water": 0,
+        "Speed - Air": 0,
+        "Speed - Anti-Gravity": 0,
         "Acceleration": 0,
         "Weight": 0,
-        "Handling": {
-          "Ground": 0,
-          "Water": 0,
-          "Air": 0,
-          "Anti-Gravity": 0
-        },
+        "Handling - Ground": 0,
+        "Handling - Water": 0,
+        "Handling - Air": 0,
+        "Handling - Anti-Gravity": 0,
         "Traction": 0,
         "Mini-Turbo": 0,
         "Options": [

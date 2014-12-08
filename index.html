@@ -12,12 +12,12 @@
 <body>
     <!-- empty action == submit to self, handy! -->
     <form action="" method="GET" onsubmit="return false">
-        <label for="s"><input type="checkbox" name="s" id="s"><span class='form-button' id="s-button">Speed</span></label>
-        <label for="a"><input type="checkbox" name="a" id="a"><span class='form-button' id="a-button">Acceleration</span></label>
-        <label for="w"><input type="checkbox" name="w" id="w"><span class='form-button' id="w-button">Weight</span></label>
-        <label for="h"><input type="checkbox" name="h" id="h"><span class='form-button' id="h-button">Handling</span></label>
-        <label for="t"><input type="checkbox" name="t" id="t"><span class='form-button' id="t-button">Traction</span></label>
-        <label for="m"><input type="checkbox" name="m" id="m"><span class='form-button' id="m-button">Mini-Turbo</span></label>
+        <label for="Speed">       <input type="checkbox" name="Speed"        id="Speed">       <span class='form-button' id="s-button">Speed</span></label>
+        <label for="Acceleration"><input type="checkbox" name="Acceleration" id="Acceleration"><span class='form-button' id="a-button">Acceleration</span></label>
+        <label for="Weight">      <input type="checkbox" name="Weight"       id="Weight">      <span class='form-button' id="w-button">Weight</span></label>
+        <label for="Handling">    <input type="checkbox" name="Handling"     id="Handling">    <span class='form-button' id="h-button">Handling</span></label>
+        <label for="Traction">    <input type="checkbox" name="Traction"     id="Traction">    <span class='form-button' id="t-button">Traction</span></label>
+        <label for="Mini-Turbo">  <input type="checkbox" name="Mini-Turbo"   id="Mini-Turbo">  <span class='form-button' id="m-button">Mini-Turbo</span></label>
         <input type="text" id='filter-search' placeholder='filter characters/vehicles/tires...'/>
     </form>
     <br class='clear'/>
@@ -29,6 +29,14 @@
         speed and handling are considered as the average of their terrains values<br/><br/>
         there are only two kinds of gliders, adding them here would be pointless<br/>
     </p>
+    <div id='graph-container'>
+        <svg id="graph"
+                width="600"
+                height="600"
+                viewBox="0 0 600 600"
+                preserveAspectRatio="xMidYMid">
+        </svg>
+    </div>
     <div id='listing'></div>
 
 
