@@ -6,7 +6,6 @@ boxen = document.querySelectorAll 'form input[type="checkbox"]'
 halptaxt = document.querySelector '.halptaxt'
 filter_search = document.querySelector '#filter-search'
 space_regex = `/ /g` #because mutiple-replacement only works with regexs
-engage_dataviz = document.querySelector '#engage-dataviz'
 
 DISPLAY_AMOUNT = 5
 COLOR_TABLE = {
@@ -185,58 +184,158 @@ score = (combo, keys) ->
 
   (sum ** 2) / (1 + deviation ** 2)
 
-d3.json 'combined.json', (err, json_data) -> 
+d3.json 'averaged_and_combined.json', (err, json_data) ->
   if err
-    throw new Error 'Error getting data'
+    console.error err
+    throw new Error 'Error getting averaged'
 
-  rows = d3.select('#listing')
-    .selectAll('div')
-    .data(d3.entries json_data)
+  PADDING = 50
+  RANGE   = [ PADDING, 600-PADDING ]
+
+  xScale = d3.scale.linear()
+    .domain     [ 0, 6 ]
+    .rangeRound RANGE
+    .clamp true
+
+  yScale = d3.scale.linear()
+    # .domain     [ 0, Object.keys(Cs).length-1 ]
+    .domain     [ 6, 0 ]
+    .rangeRound RANGE
+    .clamp true
+
+  aScale = d3.scale.linear()
+    .domain     [ Object.keys(json_data).length-1, 0 ]
+    .rangeRound RANGE
+    .clamp true
+
+  xAxis = d3.svg.axis()
+    .scale xScale
+    .orient 'bottom'
+    .tickSize RANGE[1]-PADDING/2-20
+    .tickFormat d3.format '.0'
+    .ticks 7
+
+  yAxis = d3.svg.axis()
+    .scale yScale
+    .orient 'left'
+    .tickSize RANGE[1]-PADDING/2-20
+    .tickFormat d3.format '.0'
+    .ticks 7
+
+  graph = d3.select '#graph'
+
+  performing2dCompare = -> if sort_stack.length < 2 then 0 else 1
+  setLabels = ->
+    xLabel.text sort_stack[0]
+
+    if 1 < sort_stack.length 
+      yLabel.text sort_stack[1]
+    else 
+      yLabel.text ''
+
+  xAxisEl = graph.append('g').attr 'id', 'x-axis'
+    .attr 'transform', "translate(0,#{PADDING})"
+    .call xAxis
+
+  yAxisEl = graph.append('g').attr 'id', 'y-axis'
+    .attr 'transform', "translate(#{RANGE[1]},0)"
+    .call yAxis
+    .style 'opacity', -> performing2dCompare()
+
+  xLabel = xAxisEl.append 'text'
+    .attr 'class', 'x-label'
+    .attr 'transform', "translate(#{xScale 3},#{RANGE[1]-10})"
+    .attr 'text-anchor', 'middle'
+
+  yLabel = yAxisEl.append 'text'
+    .attr 'class', 'y-label'
+    .attr 'transform', "translate(-#{RANGE[1]-PADDING/2},#{yScale 3}),rotate(-90)"
+    .attr 'text-anchor', 'middle'
+
+  combination_points = graph.selectAll 'circle'
+    .data d3.entries json_data
     .enter()
-    .append('div')
-    .html TEMPLATIZE
+    .append 'circle'
+    .attr 'cx', xScale 0
+    .attr 'cy', yScale 0
+    .attr 'r', 5
 
-  rows
-    .classed('row', true)
-    # TODO: change this to a delegate
-    .each (d, i) ->
-      @addEventListener 'click', (e) ->
-        if 'true' == @dataset.toggle
-          @dataset.toggle = 'false'
-          @querySelector('.details').classList.add 'hide'
-        else
-          @dataset.toggle = 'true'
-          @querySelector('.details').classList.remove 'hide'
-      
-      @classList.add 'hide'
+  detail_view = d3.select '#detail-view'
 
-  FILTER_RESULTS = (d, i) ->
-    if search_string is null
-      i > DISPLAY_AMOUNT
+  combination_points.on 'mouseover', (d) ->
+
+    detail_view.html ->
+      char_images = vehicle_images = tire_images = ''
+
+      for c, i in d.value.Options[0]
+        char_images     += "<div title='#{c}' alt='#{c}' class='mk8#{c.replace(space_regex, '').replace('.','').toLowerCase()}'></div>"
+      for v, i in d.value.Options[1]
+        vehicle_images  += "<div title='#{v}' alt='#{v}' class='mk8#{v.replace(space_regex, '').replace('.','').toLowerCase()}body'></div>"
+      for t, i in d.value.Options[2]
+        tire_images     += "<div title='#{t}' alt='#{t}' class='mk8#{t.replace(space_regex, '').replace('.','').toLowerCase()}tires'></div>"
+
+      """
+        <div class='opts'>
+          <div class='opt'>#{char_images}</div>
+          <div class='opt'>#{vehicle_images}</div>
+          <div class='opt'>#{tire_images}</div>
+        </div>
+        <div class='chart'>
+          <div class='bar sub-bar speed-bar'    style='width: #{(d.value["Speed"]) / 6 * 100 + '%'}'>&nbsp;</div>
+          <div class='bar sub-bar speed-bar'    style='width: #{(d.value["Speed"]) / 6 * 100 + '%'}'>&nbsp;</div>
+          <div class='bar sub-bar speed-bar'    style='width: #{(d.value["Speed"]) / 6 * 100 + '%'}'>&nbsp;</div>
+          <div class='bar sub-bar speed-bar'    style='width: #{(d.value["Speed"]) / 6 * 100 + '%'}'>&nbsp;</div>
+          <div class='bar acceleration-bar'     style='width: #{(d.value["Acceleration"]) / 6 * 100 + '%'}'>&nbsp;</div>
+          <div class='bar weight-bar'           style='width: #{(d.value["Weight"]) / 6 * 100 + '%'}'>&nbsp;</div>
+          <div class='bar sub-bar handling-bar' style='width: #{(d.value["Handling"]) / 6 * 100 + '%'}'>&nbsp;</div>
+          <div class='bar sub-bar handling-bar' style='width: #{(d.value["Handling"]) / 6 * 100 + '%'}'>&nbsp;</div>
+          <div class='bar sub-bar handling-bar' style='width: #{(d.value["Handling"]) / 6 * 100 + '%'}'>&nbsp;</div>
+          <div class='bar sub-bar handling-bar' style='width: #{(d.value["Handling"]) / 6 * 100 + '%'}'>&nbsp;</div>
+          <div class='bar traction-bar'         style='width: #{(d.value["Traction"]) / 6 * 100 + '%'}'>&nbsp;</div>
+          <div class='bar miniturbo-bar'        style='width: #{(d.value["Mini-Turbo"]) / 6 * 100 + '%'}'>&nbsp;</div>
+        </div>
+      """
+
+  FILTER_RESULTS_WITH_OPACITY = (d, i) ->
+    if search_string is null or search_string.test("".concat.apply([].concat.apply([], d.value.OptionsString)))
+      1
     else
-      if search_string.test "".concat.apply [].concat.apply [], d.value.Options
-        results_collected++ > DISPLAY_AMOUNT
-      else
-        true
+      0
 
-  d3.select('#filter-search').on 'input', ->
-    if filter_search.value.length < 2
-      return search_string = null
-
+  d3.select('#filter-search').on 'input.graph', ->
     search_string = new RegExp filter_search.value, 'i'
-    rows.classed 'hide', FILTER_RESULTS
-    results_collected = 0
+    combination_points.transition().duration(2000).style 'opacity', FILTER_RESULTS_WITH_OPACITY
 
-  d3.selectAll('form input[type="checkbox"]').on 'click.sort', (c) ->
-    sorting_by = []
+  d3.selectAll('form input[type="checkbox"]').on 'click.graph', (c) ->
+    if @checked
+      sort_stack.push @name 
+    else
+      for stat, idx in sort_stack when stat is @name
+        sort_stack.splice idx, 1
 
-    for b in boxen when b.checked is true
-      sorting_by.push @name
+    if 2 < sort_stack.length
+      sort_stack.splice 0, sort_stack.length - 2
 
-    return if sorting_by.length == 0
+    for b in boxen
+      if sort_stack.indexOf(b.name) is -1
+        b.checked = false
 
-    rows
-    .sort (a, b) ->
-      score(b.value, sorting_by) - score(a.value, sorting_by)
-    .classed 'hide', FILTER_RESULTS
-    results_collected = 0
+    setLabels()
+    yAxisEl.transition().duration(1000).style 'opacity', -> performing2dCompare()
+
+    if 1 < sort_stack.length
+      rgbInterpolator = d3.interpolateRgb COLOR_TABLE[sort_stack[0]], COLOR_TABLE[sort_stack[1]]
+      combination_points
+        .attr 'fill', (d) ->
+          rgbInterpolator(d.value[sort_stack[1]] / (d.value[sort_stack[0]] + d.value[sort_stack[1]]))
+    else
+      combination_points
+        .attr 'fill', 'white'
+
+
+    combination_points.transition().duration(1000)
+      .attr 'cx', (d, i, el) -> 
+        if 0 < sort_stack.length then xScale d.value[sort_stack[0]] else xScale 0
+      .attr 'cy', (d, i, el) ->
+        if 1 < sort_stack.length then yScale d.value[sort_stack[1]] else aScale i
+      .style 'opacity', FILTER_RESULTS_WITH_OPACITY

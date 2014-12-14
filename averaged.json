@@ -1,0 +1,611 @@
+{
+  "Characters": {
+    "Light1": {
+      "Speed - Ground": 2.25,
+      "Speed - Water": 2.75,
+      "Speed - Air": 2.25,
+      "Speed - Anti-Gravity": 2.5,
+      "Acceleration": 3.25,
+      "Weight": 2.25,
+      "Handling - Ground": 4.75,
+      "Handling - Water": 4.75,
+      "Handling - Air": 4.5,
+      "Handling - Anti-Gravity": 5,
+      "Traction": 4.5,
+      "Mini-Turbo": 3,
+      "Options": [
+        "Baby Mario",
+        "Baby Luigi",
+        "Baby Peach",
+        "Baby Daisy",
+        "Baby Rosalina",
+        "Lemmy",
+        "Small Mii"
+      ],
+      "Speed": 2.4375,
+      "Handling": 4.75
+    },
+    "Light2": {
+      "Speed - Ground": 2.75,
+      "Speed - Water": 3.25,
+      "Speed - Air": 2.75,
+      "Speed - Anti-Gravity": 3,
+      "Acceleration": 3,
+      "Weight": 2.75,
+      "Handling - Ground": 4.25,
+      "Handling - Water": 4.25,
+      "Handling - Air": 4,
+      "Handling - Anti-Gravity": 4.5,
+      "Traction": 4.25,
+      "Mini-Turbo": 2.75,
+      "Options": [
+        "Toad",
+        "Koopa",
+        "ShyGuy",
+        "Lakitu",
+        "Toadette",
+        "Larry",
+        "Wendy"
+      ],
+      "Speed": 2.9375,
+      "Handling": 4.25
+    },
+    "MediumCatPeach": {
+      "Speed - Ground": 3.25,
+      "Speed - Water": 3.75,
+      "Speed - Air": 3.25,
+      "Speed - Anti-Gravity": 3.5,
+      "Acceleration": 3,
+      "Weight": 3,
+      "Handling - Ground": 3.75,
+      "Handling - Water": 3.75,
+      "Handling - Air": 3.5,
+      "Handling - Anti-Gravity": 4,
+      "Traction": 4,
+      "Mini-Turbo": 2.5,
+      "Options": [
+        "CatPeach"
+      ],
+      "Speed": 3.4375,
+      "Handling": 3.75
+    },
+    "Medium1": {
+      "Speed - Ground": 3.25,
+      "Speed - Water": 3.75,
+      "Speed - Air": 3.25,
+      "Speed - Anti-Gravity": 3.5,
+      "Acceleration": 2.75,
+      "Weight": 3.25,
+      "Handling - Ground": 3.75,
+      "Handling - Water": 3.75,
+      "Handling - Air": 3.5,
+      "Handling - Anti-Gravity": 4,
+      "Traction": 4,
+      "Mini-Turbo": 2.5,
+      "Options": [
+        "Peach",
+        "Daisy",
+        "Yoshi"
+      ],
+      "Speed": 3.4375,
+      "Handling": 3.75
+    },
+    "MediumTanookiMario": {
+      "Speed - Ground": 3.75,
+      "Speed - Water": 4.25,
+      "Speed - Air": 3.75,
+      "Speed - Anti-Gravity": 4,
+      "Acceleration": 2.75,
+      "Weight": 3.5,
+      "Handling - Ground": 3.25,
+      "Handling - Water": 3.25,
+      "Handling - Air": 3,
+      "Handling - Anti-Gravity": 3.5,
+      "Traction": 3.75,
+      "Mini-Turbo": 2.25,
+      "Options": [
+        "TanookiMario"
+      ],
+      "Speed": 3.9375,
+      "Handling": 3.25
+    },
+    "Medium2": {
+      "Speed - Ground": 3.75,
+      "Speed - Water": 4.25,
+      "Speed - Air": 3.75,
+      "Speed - Anti-Gravity": 4,
+      "Acceleration": 2.5,
+      "Weight": 3.75,
+      "Handling - Ground": 3.25,
+      "Handling - Water": 3.25,
+      "Handling - Air": 3,
+      "Handling - Anti-Gravity": 3.5,
+      "Traction": 3.75,
+      "Mini-Turbo": 2.25,
+      "Options": [
+        "Mario",
+        "Luigi",
+        "Iggy",
+        "Ludwig",
+        "Medium Mii"
+      ],
+      "Speed": 3.9375,
+      "Handling": 3.25
+    },
+    "Heavy1": {
+      "Speed - Ground": 4.25,
+      "Speed - Water": 4.75,
+      "Speed - Air": 4.25,
+      "Speed - Anti-Gravity": 4.5,
+      "Acceleration": 2.25,
+      "Weight": 4.25,
+      "Handling - Ground": 2.75,
+      "Handling - Water": 2.75,
+      "Handling - Air": 2.5,
+      "Handling - Anti-Gravity": 3,
+      "Traction": 3.5,
+      "Mini-Turbo": 2,
+      "Options": [
+        "Donkey Kong",
+        "Waluigi",
+        "Rosalina",
+        "Roy"
+      ],
+      "Speed": 4.4375,
+      "Handling": 2.75
+    },
+    "Heavy2": {
+      "Speed - Ground": 4.25,
+      "Speed - Water": 4.75,
+      "Speed - Air": 4.25,
+      "Speed - Anti-Gravity": 4.5,
+      "Acceleration": 2,
+      "Weight": 4.75,
+      "Handling - Ground": 2.75,
+      "Handling - Water": 2.75,
+      "Handling - Air": 2.5,
+      "Handling - Anti-Gravity": 3,
+      "Traction": 3.25,
+      "Mini-Turbo": 1.75,
+      "Options": [
+        "Metal Mario",
+        "Pink Gold Peach"
+      ],
+      "Speed": 4.4375,
+      "Handling": 2.75
+    },
+    "Heavy3": {
+      "Speed - Ground": 4.75,
+      "Speed - Water": 5.25,
+      "Speed - Air": 4.75,
+      "Speed - Anti-Gravity": 5,
+      "Acceleration": 2,
+      "Weight": 4.75,
+      "Handling - Ground": 2.25,
+      "Handling - Water": 2.25,
+      "Handling - Air": 2,
+      "Handling - Anti-Gravity": 2.5,
+      "Traction": 3.25,
+      "Mini-Turbo": 1.75,
+      "Options": [
+        "Bowser",
+        "Wario",
+        "Morton",
+        "Heavy Mii"
+      ],
+      "Speed": 4.9375,
+      "Handling": 2.25
+    }
+  },
+  "Vehicles": {
+    "Standard Kart": {
+      "Type": "Kart",
+      "Speed - Ground": 0,
+      "Speed - Water": 0,
+      "Speed - Air": 0,
+      "Speed - Anti-Gravity": 0,
+      "Acceleration": 0,
+      "Weight": 0,
+      "Handling - Ground": 0,
+      "Handling - Water": 0,
+      "Handling - Air": 0,
+      "Handling - Anti-Gravity": 0,
+      "Traction": 0,
+      "Mini-Turbo": 0,
+      "Options": [
+        "Standard Kart",
+        "Cat Cruiser",
+        "Prancer",
+        "Sneeker",
+        "Teddy Buggy",
+        "300 SL Roadster"
+      ],
+      "Speed": 0.0,
+      "Handling": 0.0
+    },
+    "Light Kart": {
+      "Type": "Kart",
+      "Speed - Ground": 0,
+      "Speed - Water": 0.25,
+      "Speed - Air": 0.25,
+      "Speed - Anti-Gravity": -0.25,
+      "Acceleration": 0.25,
+      "Weight": -0.25,
+      "Handling - Ground": 0.5,
+      "Handling - Water": 0.5,
+      "Handling - Air": 0.5,
+      "Handling - Anti-Gravity": 0.25,
+      "Traction": -0.5,
+      "Mini-Turbo": 0.25,
+      "Options": [
+        "Pipe Frame",
+        "Wild Wiggler",
+        "W 25 Silver Arrow"
+      ],
+      "Speed": 0.0625,
+      "Handling": 0.4375
+    },
+    "Very Light Kart": {
+      "Type": "Kart",
+      "Speed - Ground": -0.75,
+      "Speed - Water": 0.5,
+      "Speed - Air": 0.5,
+      "Speed - Anti-Gravity": -1,
+      "Acceleration": 1.25,
+      "Weight": -0.5,
+      "Handling - Ground": 0.5,
+      "Handling - Water": 0.75,
+      "Handling - Air": 0.75,
+      "Handling - Anti-Gravity": 0,
+      "Traction": -0.25,
+      "Mini-Turbo": 1,
+      "Options": [
+        "Biddybuggy",
+        "Landship"
+      ],
+      "Speed": -0.1875,
+      "Handling": 0.5
+    },
+    "Speed Kart": {
+      "Type": "Kart",
+      "Speed - Ground": 0.5,
+      "Speed - Water": 0.25,
+      "Speed - Air": 0.5,
+      "Speed - Anti-Gravity": 0.25,
+      "Acceleration": -0.25,
+      "Weight": 0.25,
+      "Handling - Ground": 0,
+      "Handling - Water": 0,
+      "Handling - Air": 0,
+      "Handling - Anti-Gravity": -0.25,
+      "Traction": -1,
+      "Mini-Turbo": -0.5,
+      "Options": [
+        "Mach 8",
+        "Circuit Special",
+        "Sports Coupe",
+        "Gold Standard",
+        "B Dasher"
+      ],
+      "Speed": 0.375,
+      "Handling": -0.0625
+    },
+    "Offroad Kart": {
+      "Type": "Kart",
+      "Speed - Ground": 0,
+      "Speed - Water": 0.5,
+      "Speed - Air": 0,
+      "Speed - Anti-Gravity": -0.25,
+      "Acceleration": -0.5,
+      "Weight": 0.5,
+      "Handling - Ground": -0.5,
+      "Handling - Water": 0.75,
+      "Handling - Air": -0.25,
+      "Handling - Anti-Gravity": -0.75,
+      "Traction": 0.5,
+      "Mini-Turbo": -0.75,
+      "Options": [
+        "Steel Driver",
+        "Tri-Speeder",
+        "Badwagon",
+        "Standard ATV",
+        "GLA"
+      ],
+      "Speed": 0.0625,
+      "Handling": -0.1875
+    },
+    "Blue Falcon": {
+      "Type": "Kart",
+      "Speed - Ground": 0.25,
+      "Speed - Water": 0,
+      "Speed - Air": 0,
+      "Speed - Anti-Gravity": 0,
+      "Acceleration": 0.25,
+      "Weight": -0.25,
+      "Handling - Ground": 0,
+      "Handling - Water": 0,
+      "Handling - Air": 0,
+      "Handling - Anti-Gravity": 0,
+      "Traction": -0.5,
+      "Mini-Turbo": 0,
+      "Options": [
+        "Blue Falcon"
+      ],
+      "Speed": 0.0625,
+      "Handling": 0.0
+    },
+    "Tanooki Kart": {
+      "Type": "Kart",
+      "Speed - Ground": 0.25,
+      "Speed - Water": 0,
+      "Speed - Air": 0,
+      "Speed - Anti-Gravity": 0,
+      "Acceleration": 0.25,
+      "Weight": -0.25,
+      "Handling - Ground": 0,
+      "Handling - Water": 0,
+      "Handling - Air": 0,
+      "Handling - Anti-Gravity": 0,
+      "Traction": -0.5,
+      "Mini-Turbo": 0,
+      "Options": [
+        "Tanooki Kart"
+      ],
+      "Speed": 0.0625,
+      "Handling": 0.0
+    },
+    "Standard Bike": {
+      "Type": "Bike",
+      "Speed - Ground": 0,
+      "Speed - Water": 0,
+      "Speed - Air": 0,
+      "Speed - Anti-Gravity": 0,
+      "Acceleration": 0,
+      "Weight": 0,
+      "Handling - Ground": 0,
+      "Handling - Water": 0,
+      "Handling - Air": 0,
+      "Handling - Anti-Gravity": 0,
+      "Traction": 0,
+      "Mini-Turbo": 0,
+      "Options": [
+        "The Duke"
+      ],
+      "Speed": 0.0,
+      "Handling": 0.0
+    },
+    "Light Bike": {
+      "Type": "Bike",
+      "Speed - Ground": 0,
+      "Speed - Water": 0.25,
+      "Speed - Air": 0.25,
+      "Speed - Anti-Gravity": -0.25,
+      "Acceleration": 0.25,
+      "Weight": -0.25,
+      "Handling - Ground": 0.5,
+      "Handling - Water": 0.5,
+      "Handling - Air": 0.5,
+      "Handling - Anti-Gravity": 0.25,
+      "Traction": -0.5,
+      "Mini-Turbo": 0.25,
+      "Options": [
+        "Standard Bike",
+        "Flame Rider",
+        "Varmint"
+      ],
+      "Speed": 0.0625,
+      "Handling": 0.4375
+    },
+    "Very Light Bike": {
+      "Type": "Bike",
+      "Speed - Ground": -0.75,
+      "Speed - Water": 0.5,
+      "Speed - Air": 0.5,
+      "Speed - Anti-Gravity": -1,
+      "Acceleration": 1.25,
+      "Weight": -0.5,
+      "Handling - Ground": 0.5,
+      "Handling - Water": 0.75,
+      "Handling - Air": 0.75,
+      "Handling - Anti-Gravity": 0,
+      "Traction": -0.25,
+      "Mini-Turbo": 1,
+      "Options": [
+        "Mr. Scooty"
+      ],
+      "Speed": -0.1875,
+      "Handling": 0.5
+    },
+    "Inside Drift Bike": {
+      "Type": "Bike",
+      "Speed - Ground": 0,
+      "Speed - Water": 0,
+      "Speed - Air": 0,
+      "Speed - Anti-Gravity": -0.25,
+      "Acceleration": 0.75,
+      "Weight": -0.25,
+      "Handling - Ground": 0.75,
+      "Handling - Water": 0.75,
+      "Handling - Air": 0.75,
+      "Handling - Anti-Gravity": 0.5,
+      "Traction": -1.25,
+      "Mini-Turbo": 0.5,
+      "Options": [
+        "Comet",
+        "Sport Bike",
+        "Jet Bike",
+        "Yoshi Bike"
+      ],
+      "Speed": -0.0625,
+      "Handling": 0.6875
+    },
+    "MasterCycle Bike": {
+      "Type": "Bike",
+      "Speed - Ground": 0.25,
+      "Speed - Water": 0,
+      "Speed - Air": 0,
+      "Speed - Anti-Gravity": 0,
+      "Acceleration": 0,
+      "Weight": 0,
+      "Handling - Ground": 0.5,
+      "Handling - Water": 0,
+      "Handling - Air": 0,
+      "Handling - Anti-Gravity": 0,
+      "Traction": -0.75,
+      "Mini-Turbo": 0,
+      "Options": [
+        "Master Cycle"
+      ],
+      "Speed": 0.0625,
+      "Handling": 0.125
+    }
+  },
+  "Wheels": {
+    "Standard": {
+      "Speed - Ground": 0,
+      "Speed - Water": 0,
+      "Speed - Air": 0,
+      "Speed - Anti-Gravity": 0,
+      "Acceleration": 0,
+      "Weight": 0,
+      "Handling - Ground": 0,
+      "Handling - Water": 0,
+      "Handling - Air": 0,
+      "Handling - Anti-Gravity": 0,
+      "Traction": 0,
+      "Mini-Turbo": 0,
+      "Options": [
+        "Standard",
+        "Off-Road",
+        "Blue Standard",
+        "Retro Off-Road",
+        "GLA Tires"
+      ],
+      "Speed": 0.0,
+      "Handling": 0.0
+    },
+    "Monster": {
+      "Speed - Ground": 0,
+      "Speed - Water": -0.5,
+      "Speed - Air": -0.5,
+      "Speed - Anti-Gravity": 0,
+      "Acceleration": -0.5,
+      "Weight": 0.5,
+      "Handling - Ground": -0.75,
+      "Handling - Water": -0.75,
+      "Handling - Air": -0.75,
+      "Handling - Anti-Gravity": -0.75,
+      "Traction": 0.75,
+      "Mini-Turbo": 0,
+      "Options": [
+        "Monster",
+        "Hot Monster"
+      ],
+      "Speed": -0.25,
+      "Handling": -0.75
+    },
+    "Light": {
+      "Speed - Ground": -0.25,
+      "Speed - Water": -1,
+      "Speed - Air": 0.25,
+      "Speed - Anti-Gravity": -0.25,
+      "Acceleration": 0.25,
+      "Weight": -0.25,
+      "Handling - Ground": -0.25,
+      "Handling - Water": -0.5,
+      "Handling - Air": 0,
+      "Handling - Anti-Gravity": -0.25,
+      "Traction": 0.5,
+      "Mini-Turbo": 0.75,
+      "Options": [
+        "Wood",
+        "Sponge",
+        "Cushion"
+      ],
+      "Speed": -0.3125,
+      "Handling": -0.25
+    },
+    "Very Light": {
+      "Speed - Ground": -0.5,
+      "Speed - Water": 0,
+      "Speed - Air": 0.5,
+      "Speed - Anti-Gravity": -0.5,
+      "Acceleration": 1,
+      "Weight": -0.5,
+      "Handling - Ground": 0.25,
+      "Handling - Water": 0.25,
+      "Handling - Air": 0.25,
+      "Handling - Anti-Gravity": 0.25,
+      "Traction": -0.25,
+      "Mini-Turbo": 1.5,
+      "Options": [
+        "Roller",
+        "Button",
+        "Azure Roller"
+      ],
+      "Speed": -0.125,
+      "Handling": 0.25
+    },
+    "Slim": {
+      "Speed - Ground": 0.25,
+      "Speed - Water": -0.25,
+      "Speed - Air": 0.25,
+      "Speed - Anti-Gravity": 0.25,
+      "Acceleration": -0.25,
+      "Weight": 0,
+      "Handling - Ground": 0.25,
+      "Handling - Water": 0.25,
+      "Handling - Air": 0.25,
+      "Handling - Anti-Gravity": 0.25,
+      "Traction": -0.5,
+      "Mini-Turbo": 0.25,
+      "Options": [
+        "Slim",
+        "Crimson Slim",
+        "Triforce Tires"
+      ],
+      "Speed": 0.125,
+      "Handling": 0.25
+    },
+    "Slick": {
+      "Speed - Ground": 0.5,
+      "Speed - Water": -1,
+      "Speed - Air": 0.5,
+      "Speed - Anti-Gravity": 0.5,
+      "Acceleration": -0.25,
+      "Weight": 0.25,
+      "Handling - Ground": 0,
+      "Handling - Water": 0,
+      "Handling - Air": 0,
+      "Handling - Anti-Gravity": 0,
+      "Traction": -1,
+      "Mini-Turbo": 0.25,
+      "Options": [
+        "Slick",
+        "Cyber Slick"
+      ],
+      "Speed": 0.125,
+      "Handling": 0.0
+    },
+    "Metal": {
+      "Speed - Ground": 0.25,
+      "Speed - Water": -0.25,
+      "Speed - Air": 0.25,
+      "Speed - Anti-Gravity": 0.25,
+      "Acceleration": -0.5,
+      "Weight": 0.5,
+      "Handling - Ground": 0,
+      "Handling - Water": 0,
+      "Handling - Air": 0,
+      "Handling - Anti-Gravity": 0,
+      "Traction": -0.5,
+      "Mini-Turbo": 0,
+      "Options": [
+        "Metal",
+        "Gold Tires"
+      ],
+      "Speed": 0.125,
+      "Handling": 0.0
+    }
+  }
+}

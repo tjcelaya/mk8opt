@@ -1,11 +1,15 @@
-html { box-sizing: border-box; margin-top: 1em; background-color: #e0e0e0;}
+html { box-sizing: border-box; margin-top: 1em; }
 *, *:before, *:after { box-sizing: inherit }
-body { max-width: 90%; height: 100%; margin: 0 auto }
+body { max-width: 980px; height: 100%; margin: 0 auto; background-color: #e0e0e0; }
+body.dataviz { background-color: #000; }
+.dataviz span { color: #ddd; background-color: #333; border: 1px solid #000 }
+.dataviz input:checked + span { color: #000 }
 input[type='checkbox'] { padding: 0.3em; vertical-align: middle; display: none }
 form label { display: block; float: left; width: 16.666666% }
 form span { display: block; padding: 0.5em; font-size: 1em; width: 100%; padding: 1em; background-color: #EFEFEF; border-radius: 4px; border: 1px solid #D0D0D0 }
 input:checked + span { background-color: #AAA; color: #FFF }
-form, .halptaxt { margin-bottom: 1em }
+form, .halptaxt { margin: 1em 0; }
+.halp { float: right; margin-top: 1em; }
 table { width: 100%; empty-cells: show }
 td, th { width: 8% }
 .clear { clear: both }
@@ -21,13 +25,15 @@ td, th { width: 8% }
 .row:hover .stat { color: #000; }
 hr { display: block; clear: both; margin: 1em 0; color: #ddd; }
 .hide { display: none }
-#filter-search { width: 100%; margin-top: 1em; }
+#filter-search { margin-top: 1em; display: block; float: left; width: 70%;}
 .bar { background-color: red; height: 17%; margin: 1px 0px }
 .sub-bar { height: 4%; margin-bottom: 0px }
 .sub-bar + .sub-bar { margin-top: 0px }
+#detail-container { margin-top: 2em; }
 .chart { height: 192px; width: 30%; float: right; background-size: 16.66666%; background-image: linear-gradient(90deg, #aaa 1px, transparent 1px) }
 
-#graph { background-color: #fff; border: 1px solid black; margin: 0 auto; display: block; }
+#graph { background-color: #000; border: 1px solid black; margin: 0 auto; display: block; }
+#graph text { fill: #fff ;}
 .tick line {
     stroke: #ddd;
 }
@@ -38,7 +44,7 @@ path {
 .grid path { fill: none; }
 .grid line { stroke: #ddd; stroke-width: 1px; }
 
-#xAxis, #yAxis { font-family: sans-serif; }
+#x-axis, #y-axis { font-family: sans-serif; }
 
 .speed-bar, #s-button:before { background-color: red }
 .acceleration-bar, #a-button:before { background-color: rgb(255, 214, 3) }
