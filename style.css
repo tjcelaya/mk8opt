@@ -67,22 +67,21 @@ tbody { margin-top: 1em }
     form label { width: 100% }
 }
 @media (max-width:700px) {
-    td:nth-of-type(1):before  { content: "Speed(Ground)" }
-    td:nth-of-type(2):before  { content: "Speed(Water)" }
-    td:nth-of-type(3):before  { content: "Speed(Air)" }
-    td:nth-of-type(4):before  { content: "Speed(Anti-Gravity)" }
-    td:nth-of-type(5):before  { content: "Acceleration" }
-    td:nth-of-type(6):before  { content: "Weight" }
-    td:nth-of-type(7):before  { content: "Handling(Ground)" }
-    td:nth-of-type(8):before  { content: "Handling(Water)" }
-    td:nth-of-type(9):before  { content: "Handling(Air)" }
-    td:nth-of-type(10):before { content: "Handling(Anti-Gravity)" }
-    td:nth-of-type(11):before { content: "Traction" }
-    td:nth-of-type(12):before { content: "Mini-Turbo" }
+    td:nth-of-type(1):before  { border-right: 3px solid red;               content: "Speed(Ground)" }
+    td:nth-of-type(2):before  { border-right: 3px solid red;               content: "Speed(Water)" }
+    td:nth-of-type(3):before  { border-right: 3px solid red;               content: "Speed(Air)" }
+    td:nth-of-type(4):before  { border-right: 3px solid red;               content: "Speed(Anti-Gravity)" }
+    td:nth-of-type(5):before  { border-right: 3px solid rgb(255, 214, 3);  content: "Acceleration" }
+    td:nth-of-type(6):before  { border-right: 3px solid rgb(42, 186, 71);  content: "Weight" }
+    td:nth-of-type(7):before  { border-right: 3px solid rgb(95, 158, 160); content: "Handling(Ground)" }
+    td:nth-of-type(8):before  { border-right: 3px solid rgb(95, 158, 160); content: "Handling(Water)" }
+    td:nth-of-type(9):before  { border-right: 3px solid rgb(95, 158, 160); content: "Handling(Air)" }
+    td:nth-of-type(10):before { border-right: 3px solid rgb(95, 158, 160); content: "Handling(Anti-Gravity)" }
+    td:nth-of-type(11):before { border-right: 3px solid rgb(46, 46, 249);  content: "Traction" }
+    td:nth-of-type(12):before { border-right: 3px solid rgb(255, 97, 0);   content: "Mini-Turbo" }
     table, tr, td { float: left; display: block; width: 100% }
-    td { width: 70%; }
     th { display: none }
-    td:before { clear: left; float: left; display: block; width: 45% }
+    td:before { clear: left; float: left; display: block; width: 70% }
     img { width: inherit !important; height: inherit !important }
     .chart { width: 100%; float:left; }
     .opts { width: 100%; }
