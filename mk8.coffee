@@ -92,16 +92,16 @@ TEMPLATIZE =  (d, i) ->
         </thead>
         <tbody>
           <tr>
-          <td>#{d.value["Speed"]["Ground"]}</td>
-          <td>#{d.value["Speed"]["Water"]}</td>
-          <td>#{d.value["Speed"]["Air"]}</td>
-          <td>#{d.value["Speed"]["Anti-Gravity"]}</td>
+          <td>#{d.value["SpeedByTerrain"]["Ground"]}</td>
+          <td>#{d.value["SpeedByTerrain"]["Water"]}</td>
+          <td>#{d.value["SpeedByTerrain"]["Air"]}</td>
+          <td>#{d.value["SpeedByTerrain"]["Anti-Gravity"]}</td>
           <td>#{d.value["Acceleration"]}</td>
           <td>#{d.value["Weight"]}</td>
-          <td>#{d.value["Handling"]["Ground"]}</td>
-          <td>#{d.value["Handling"]["Water"]}</td>
-          <td>#{d.value["Handling"]["Air"]}</td>
-          <td>#{d.value["Handling"]["Anti-Gravity"]}</td>
+          <td>#{d.value["HandlingByTerrain"]["Ground"]}</td>
+          <td>#{d.value["HandlingByTerrain"]["Water"]}</td>
+          <td>#{d.value["HandlingByTerrain"]["Air"]}</td>
+          <td>#{d.value["HandlingByTerrain"]["Anti-Gravity"]}</td>
           <td>#{d.value["Traction"]}</td>
           <td>#{d.value["Mini-Turbo"]}</td>
           </tr>
