@@ -5,8 +5,10 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css">
     <meta name="viewport" content="width=device-width">
+    <script type="text/javascript" src='live.js'></script>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="sprites.css">
+    <style type="text/css" class='cheating'>.speed-bar.sub-bar,.handling-bar.sub-bar { display: none !important } .speed-bar.bar,.handling-bar.bar { display: block !important }</style>
 </head>
 <body>
     <!-- empty action == submit to self, handy! -->
@@ -18,7 +20,9 @@
         <label for="Traction">    <input type="checkbox" name="Traction"     id="Traction">    <span class='form-button' id="t-button">Traction</span></label>
         <label for="Mini-Turbo">  <input type="checkbox" name="Mini-Turbo"   id="Mini-Turbo">  <span class='form-button' id="m-button">Mini-Turbo</span></label>
         <input type="text" id='filter-search' placeholder='filter characters/vehicles/tires...'/>
-        <button type='button' class='halp'>toggle help</button>
+        <a href="dataviz.html" class='goto-dataviz'>DATAVIZ TO THE MAX</a>
+        <label class='toggles' for="halp"><input type='checkbox' name='halp'/><span class='halp'>toggle help</span></label>
+        <label class='toggles' for="terrain-stats"><input type='checkbox' name='terrain-stats'><span class='terrain-stats'>toggle terrain stats</span></label>
         <br class='clear'/>
     </form>
     <p class='halptaxt hide'>
@@ -29,8 +33,6 @@
         there are only two kinds of gliders, adding them here would be pointless<br/>
     </p>
     <div id='listing'></div>
-
-
     <script src="/d3.min.js"></script>
     <script type='text/javascript' src='mk8.js'></script>
 </body>

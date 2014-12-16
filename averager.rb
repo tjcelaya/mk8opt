@@ -12,8 +12,8 @@ data.each_value do |v|
   # puts (v['Speed']['Ground'] + v['Speed']['Air'] + v['Speed']['Water'] + v['Speed']['Anti-Gravity']) / 4.0
   v['SpeedByTerrain'] = v['Speed']
   v['HandlingByTerrain'] = v['Handling']
-  v['Speed'] = (v['Speed']['Ground'] + v['Speed']['Air'] + v['Speed']['Water'] + v['Speed']['Anti-Gravity']) / 4.0
-  v['Handling'] = (v['Handling']['Ground'] + v['Handling']['Air'] + v['Handling']['Water'] + v['Handling']['Anti-Gravity']) / 4.0
+  v['Speed'] = (v['Speed']['Ground'] * 3 + v['Speed']['Air'] + v['Speed']['Water'] + v['Speed']['Anti-Gravity']) / 6.0
+  v['Handling'] = (v['Handling']['Ground'] * 3 + v['Handling']['Air'] + v['Handling']['Water'] + v['Handling']['Anti-Gravity']) / 6.0
   v['OptionsString'] = v['Options'].flatten
   v
 end
