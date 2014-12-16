@@ -2,29 +2,27 @@
 
 L = (things...) -> console.log.apply console, things
 
-boxen = document.querySelectorAll 'form input[type="checkbox"]'
+L document.querySelector '.cheating'
+
+boxen = document.querySelectorAll 'form input'
 halptaxt = document.querySelector '.halptaxt'
+CSScheat = document.querySelector '.cheating'
+
+CSS_bar_toggle = 
+  enable: '.speed-bar.sub-bar,.handling-bar.sub-bar { display: block !important } .speed-bar.bar,.handling-bar.bar { display: none !important }'
+  disable: '.speed-bar.sub-bar,.handling-bar.sub-bar { display: none !important } .speed-bar.bar,.handling-bar.bar { display: block !important }'
 filter_search = document.querySelector '#filter-search'
-space_regex = `/ /g` #because mutiple-replacement only works with regexs
-engage_dataviz = document.querySelector '#engage-dataviz'
 
 DISPLAY_AMOUNT = 5
-COLOR_TABLE = {
-  "Speed":        d3.rgb(255, 0, 0),
-  "Acceleration": d3.rgb(255, 214, 3),
-  "Weight":       d3.rgb(42, 186, 71),
-  "Handling":     d3.rgb(95, 158, 160),
-  "Traction":     d3.rgb(46, 46, 249),
-  "Mini-Turbo":   d3.rgb(255, 97, 0)
-}
+
 search_string = null
 results_collected = 0
-sort_stack = []
 
 TEMPLATIZE =  (d, i) ->
   char_images = []
   vehicle_images = []
   tire_images = []
+  space_regex = `/ /g` #because mutiple-replacement only works with regexs
 
   for c in d.value.Options[0]
     char_images.push "<div title='#{c}' alt='#{c}' class='charopt mk8#{c.replace(space_regex, '').replace('.','').toLowerCase()}'></div>"
@@ -41,16 +39,18 @@ TEMPLATIZE =  (d, i) ->
         <div class='opt wheelsopts'>#{tire_images.join ""}</div>
       </div>
       <div class='chart'>
-        <div class='bar sub-bar speed-bar'    style='width: #{(d.value["Speed"]["Ground"]) / 6 * 100 + '%'}'>&nbsp;</div>
-        <div class='bar sub-bar speed-bar'    style='width: #{(d.value["Speed"]["Water"]) / 6 * 100 + '%'}'>&nbsp;</div>
-        <div class='bar sub-bar speed-bar'    style='width: #{(d.value["Speed"]["Air"]) / 6 * 100 + '%'}'>&nbsp;</div>
-        <div class='bar sub-bar speed-bar'    style='width: #{(d.value["Speed"]["Anti-Gravity"]) / 6 * 100 + '%'}'>&nbsp;</div>
+        <div class='bar bar speed-bar'        style='width: #{(d.value["Speed"]) / 6 * 100 + '%'}'>&nbsp;</div>
+        <div class='sub-bar speed-bar'        style='width: #{(d.value["SpeedByTerrain"]["Ground"]) / 6 * 100 + '%'}'>&nbsp;</div>
+        <div class='sub-bar speed-bar'        style='width: #{(d.value["SpeedByTerrain"]["Water"]) / 6 * 100 + '%'}'>&nbsp;</div>
+        <div class='sub-bar speed-bar'        style='width: #{(d.value["SpeedByTerrain"]["Air"]) / 6 * 100 + '%'}'>&nbsp;</div>
+        <div class='sub-bar speed-bar'        style='width: #{(d.value["SpeedByTerrain"]["Anti-Gravity"]) / 6 * 100 + '%'}'>&nbsp;</div>
         <div class='bar acceleration-bar'     style='width: #{(d.value["Acceleration"]) / 6 * 100 + '%'}'>&nbsp;</div>
         <div class='bar weight-bar'           style='width: #{(d.value["Weight"]) / 6 * 100 + '%'}'>&nbsp;</div>
-        <div class='bar sub-bar handling-bar' style='width: #{(d.value["Handling"]["Ground"]) / 6 * 100 + '%'}'>&nbsp;</div>
-        <div class='bar sub-bar handling-bar' style='width: #{(d.value["Handling"]["Water"]) / 6 * 100 + '%'}'>&nbsp;</div>
-        <div class='bar sub-bar handling-bar' style='width: #{(d.value["Handling"]["Air"]) / 6 * 100 + '%'}'>&nbsp;</div>
-        <div class='bar sub-bar handling-bar' style='width: #{(d.value["Handling"]["Anti-Gravity"]) / 6 * 100 + '%'}'>&nbsp;</div>
+        <div class='bar handling-bar'         style='width: #{(d.value["Handling"]) / 6 * 100 + '%'}'>&nbsp;</div>
+        <div class='sub-bar handling-bar'     style='width: #{(d.value["HandlingByTerrain"]["Ground"]) / 6 * 100 + '%'}'>&nbsp;</div>
+        <div class='sub-bar handling-bar'     style='width: #{(d.value["HandlingByTerrain"]["Water"]) / 6 * 100 + '%'}'>&nbsp;</div>
+        <div class='sub-bar handling-bar'     style='width: #{(d.value["HandlingByTerrain"]["Air"]) / 6 * 100 + '%'}'>&nbsp;</div>
+        <div class='sub-bar handling-bar'     style='width: #{(d.value["HandlingByTerrain"]["Anti-Gravity"]) / 6 * 100 + '%'}'>&nbsp;</div>
         <div class='bar traction-bar'         style='width: #{(d.value["Traction"]) / 6 * 100 + '%'}'>&nbsp;</div>
         <div class='bar miniturbo-bar'        style='width: #{(d.value["Mini-Turbo"]) / 6 * 100 + '%'}'>&nbsp;</div>
       </div>
@@ -112,37 +112,6 @@ TEMPLATIZE =  (d, i) ->
     <br class='clear'/>
   """
 
-# var debounce = null,
-#     iframeEl = document.querySelectorAll('#vid iframe');
-    
-    
-# if (iframeEl.length != 0) {
-#   iframeEl = iframeEl[0];
-  
-#   console.log(iframeEl.getAttribute('width'))
-#   console.log(iframeEl.getAttribute('height'))
-  
-#   iframeEl.setAttribute('data-aspect-ratio', iframeEl.getAttribute('width') / iframeEl.getAttribute('height'))
-  
-#   console.log(iframeEl.getAttribute('data-aspect-ratio'))
-  
-  
-# }
-
-# window.onresize = function(){
-#   if (debounce != null)
-#     clearTimeout(debounce);
-    
-#   debounce = setTimeout(function(){
-#     var ifEl = document.querySelectorAll('#vid iframe');
-#     if (iframeEl.length != 0) {
-#       ifEl = ifEl[0];
-#       ifEl.setAttribute('width', document.body.clientWidth)
-#       ifEl.setAttribute('height', document.body.clientWidth / ifEl.getAttribute('data-aspect-ratio'))
-#     }
-#   }, 500);
-# };
-
 # unique IDs automatically become properties of the window object, T.I.L.!
 
 document.querySelector '.halp'
@@ -154,21 +123,31 @@ document.querySelector '.halp'
       @dataset.toggle = 'true'
       halptaxt.classList.remove 'hide'
 
+document.querySelector '.terrain-stats'
+  .addEventListener 'click', (e) ->
+    if @dataset.toggle == 'true'
+      @dataset.toggle = 'false'
+      CSScheat.innerHTML = CSS_bar_toggle.disable
+    else
+      @dataset.toggle = 'true'
+      CSScheat.innerHTML = CSS_bar_toggle.enable
+
+
 score = (combo, keys) ->
   return 0 unless keys.length isnt 0
   vals = []
   sum = 0
 
   for k in keys
-    if k == "Handling" or k == "Speed"
+    # if k == "Handling" or k == "Speed"
 
-      if combo[k]["avg"] is undefined
-        combo[k]["avg"] = (combo[k]["Ground"] + combo[k]["Air"] + combo[k]["Water"] + combo[k]["Anti-Gravity"] ) / 4
+    #   # if combo[k]["avg"] is undefined
+    #   #   combo[k]["avg"] = (combo[k]["Ground"] + combo[k]["Air"] + combo[k]["Water"] + combo[k]["Anti-Gravity"] ) / 4
         
-      sum += combo[k]["avg"]
-      vals.push combo[k]["avg"]
+    #   sum += combo[k]["avg"]
+    #   vals.push combo[k]["avg"]
     
-    else if k == "Acceleration"
+    if k == "Acceleration"
       sum += Math.floor combo[k]
       vals.push Math.floor combo[k]
     else
@@ -185,7 +164,7 @@ score = (combo, keys) ->
 
   (sum ** 2) / (1 + deviation ** 2)
 
-d3.json 'combined.json', (err, json_data) -> 
+d3.json 'averaged_and_combined.json', (err, json_data) -> 
   if err
     throw new Error 'Error getting data'
 
@@ -219,6 +198,8 @@ d3.json 'combined.json', (err, json_data) ->
       else
         true
 
+    
+
   d3.select('#filter-search').on 'input', ->
     if filter_search.value.length < 2
       return search_string = null
@@ -227,13 +208,16 @@ d3.json 'combined.json', (err, json_data) ->
     rows.classed 'hide', FILTER_RESULTS
     results_collected = 0
 
-  d3.selectAll('form input[type="checkbox"]').on 'click.sort', (c) ->
+  d3.selectAll('form input[type="checkbox"]').on 'click', (c) ->
+
     sorting_by = []
 
     for b in boxen when b.checked is true
-      sorting_by.push @name
+      sorting_by.push b.name
 
     return if sorting_by.length == 0
+
+    L sorting_by
 
     rows
     .sort (a, b) ->
