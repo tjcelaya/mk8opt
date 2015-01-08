@@ -217,8 +217,6 @@ d3.json 'averaged_and_combined.json', (err, json_data) ->
 
     return if sorting_by.length == 0
 
-    L sorting_by
-
     rows
     .sort (a, b) ->
       score(b.value, sorting_by) - score(a.value, sorting_by)
