@@ -3,7 +3,6 @@
 L = (things...) -> console.log.apply console, things
 
 boxen = document.querySelectorAll 'form input[type="checkbox"]'
-halptaxt = document.querySelector '.halptaxt'
 filter_search = document.querySelector '#filter-search'
 space_regex = `/ /g` #because mutiple-replacement only works with regexs
 
@@ -143,15 +142,6 @@ TEMPLATIZE =  (d, i) ->
 # };
 
 # unique IDs automatically become properties of the window object, T.I.L.!
-
-document.querySelector '.halp'
-  .addEventListener 'click', (e) ->
-    if @dataset.toggle == 'true'
-      @dataset.toggle = 'false'
-      halptaxt.classList.add 'hide'
-    else
-      @dataset.toggle = 'true'
-      halptaxt.classList.remove 'hide'
 
 score = (combo, keys) ->
   return 0 unless keys.length isnt 0

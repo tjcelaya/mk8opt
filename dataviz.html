@@ -18,16 +18,8 @@
         <label for="Traction">    <input type="checkbox" name="Traction"     id="Traction">    <span class='form-button' id="t-button">Traction</span></label>
         <label for="Mini-Turbo">  <input type="checkbox" name="Mini-Turbo"   id="Mini-Turbo">  <span class='form-button' id="m-button">Mini-Turbo</span></label>
         <input type="text" id='filter-search' placeholder='filter characters/vehicles/tires...'/>
-        <button type='button' class='halp'>toggle help</button>
         <br class='clear'/>
     </form>
-    <p class='halptaxt hide'>
-        click a checkbox to sort by that criteria, eg: checking acceleration &amp; traction will sort by highest average combination of those two stats<br/><br/>
-        any combination of the characters/vehicles/wheels in a card will give you its stats<br/><br/>
-        quantization of acceleration is accounted for<br/><br/>
-        speed and handling are considered as the average of their terrains values<br/><br/>
-        there are only two kinds of gliders, adding them here would be pointless<br/>
-    </p>
     <div id='graph-container'>
         <svg id="graph"
                 width="600"
@@ -39,9 +31,6 @@
             <div id='detail-view'></div>
         </div>
     </div>
-    <div id='listing'></div>
-
-
     <script src="d3.min.js"></script>
     <script type='text/javascript' src='mk8-dataviz.js'></script>
 </body>
